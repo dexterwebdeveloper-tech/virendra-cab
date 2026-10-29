@@ -49,21 +49,29 @@ const Footer = () => {
 
 
     <li className="d-flex gap-3">
-              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/virendracabs/" target="_blank" rel="noreferrer">
                 <i className="fab fa-instagram text-white"></i>
               </a>
 
-              <a href="https://www.facebook.com/prof" target="_blank" rel="noreferrer">
+              <a href="https://www.facebook.com/profile.php?id=61595689545132" target="_blank" rel="noreferrer">
                 <i className="fab fa-facebook-f text-white"></i>
               </a>
 
-              <a href="https://x.com/" target="_blank" rel="noreferrer">
+              <a href="https://x.com/virendracabs" target="_blank" rel="noreferrer">
                 <i className="fab fa-twitter text-white"></i>
               </a>
 
-               <a href="https://in.pinterest.com//" target="_blank" rel="noreferrer">
+               <a href="https://www.pinterest.com/virendracabs/" target="_blank" rel="noreferrer">
                 <i className="fab fa-pinterest-p text-white"></i>
               </a>
+
+               <a
+  href="https://www.youtube.com/"
+  target="_blank"
+  rel="noreferrer"
+>
+  <i className="fab fa-youtube text-white"></i>
+</a>
             </li>
   </div>
 </div>
