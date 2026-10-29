@@ -1,0 +1,161 @@
+
+/* ============================================
+   VIRENDRA CABS - FOOTER SCROLL
+   Independent Scroll for 3 Service Columns
+============================================ */
+
+/* Each service list scrolls independently */
+.footer.footer-four .footer-service-scroll {
+  display: block !important;
+
+  height: 650px;
+  max-height: 650px;
+
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+
+  padding-right: 12px !important;
+  margin: 0;
+
+  scrollbar-width: thin;
+  scrollbar-color: #F36422 #191919;
+
+  overscroll-behavior: contain;
+}
+
+/* Chrome, Edge and Safari */
+.footer.footer-four
+.footer-service-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.footer.footer-four
+.footer-service-scroll::-webkit-scrollbar-track {
+  background: #191919;
+  border-radius: 10px;
+}
+
+.footer.footer-four
+.footer-service-scroll::-webkit-scrollbar-thumb {
+  background: #F36422;
+  border-radius: 10px;
+}
+
+.footer.footer-four
+.footer-service-scroll::-webkit-scrollbar-thumb:hover {
+  background: #F36422;
+}
+
+/* Keep the heading visible above the list */
+.footer.footer-four .footer-menu .footer-title {
+  margin-bottom: 20px;
+}
+
+/* Preserve existing link design */
+.footer.footer-four .footer-service-scroll li {
+  width: 100%;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+/* Prevent narrow column overflow */
+.footer.footer-four .footer-menu {
+  min-width: 0;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .footer.footer-four .footer-service-scroll {
+    height: 450px;
+    max-height: 450px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .footer.footer-four .footer-service-scroll {
+    height: 350px;
+    max-height: 350px;
+    padding-right: 8px !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================
+   VIRENDRA CABS - FOOTER SCROLL FIX
+   Allow page scrolling above and below footer
+============================================ */
+
+.footer.footer-four .footer-service-scroll {
+  display: block !important;
+
+  height: 650px;
+  max-height: 650px;
+
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+
+  padding-right: 12px !important;
+  margin: 0;
+
+  scrollbar-width: thin;
+  scrollbar-color: #F36422 #191919;
+
+  /* Allow scrolling to continue to the main page */
+  overscroll-behavior-y: auto !important;
+}
+
+/* Scrollbar */
+.footer.footer-four
+.footer-service-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.footer.footer-four
+.footer-service-scroll::-webkit-scrollbar-track {
+  background: #191919;
+  border-radius: 10px;
+}
+
+.footer.footer-four
+.footer-service-scroll::-webkit-scrollbar-thumb {
+  background: #F36422;
+  border-radius: 10px;
+}
+
+/* Keep existing link styles */
+.footer.footer-four .footer-service-scroll li {
+  width: 100%;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .footer.footer-four .footer-service-scroll {
+    height: 450px;
+    max-height: 450px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .footer.footer-four .footer-service-scroll {
+    height: 350px;
+    max-height: 350px;
+  }
+}

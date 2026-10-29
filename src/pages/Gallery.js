@@ -4,6 +4,67 @@ import "./Gallery.css";
 
 const galleryImages = [
   {
+  id: 1,
+  image: "/images/gallery/1.jpeg",
+},
+{
+  id: 2,
+  image: "/images/gallery/2.jpeg",
+},
+{
+  id: 3,
+  image: "/images/gallery/3.jpeg",
+},
+{
+  id: 13,
+  image: "/images/gallery/13.jpeg",
+},
+{
+  id: 14,
+  image: "/images/gallery/14.jpeg",
+},
+{
+  id: 15,
+  image: "/images/gallery/15.jpeg",
+},
+{
+  id: 4,
+  image: "/images/gallery/4.jpeg",
+},
+{
+  id: 5,
+  image: "/images/gallery/5.jpeg",
+},
+{
+  id: 6,
+  image: "/images/gallery/6.jpeg",
+},
+{
+  id: 7,
+  image: "/images/gallery/7.jpeg",
+},
+{
+  id: 8,
+  image: "/images/gallery/8.jpeg",
+},
+{
+  id: 9,
+  image: "/images/gallery/9.jpeg",
+},
+{
+  id: 10,
+  image: "/images/gallery/10.jpeg",
+},
+{
+  id: 11,
+  image: "/images/gallery/11.jpeg",
+},
+{
+  id: 12,
+  image: "/images/gallery/12.jpeg",
+},
+
+{
     id: 1,
     image: "/images/fleet/Swift-Dzire.jpg",
     title: "Swift Dzire Cab",
@@ -89,12 +150,12 @@ const galleryImages = [
 },
 ];
 
-const categories = [
-  "All Photos",
-  "Sedan Cars",
-  "SUV & MUV",
-  "Traveller & Bus",
-];
+// const categories = [
+//   "All Photos",
+//   "Sedan Cars",
+//   "SUV & MUV",
+//   "Traveller & Bus",
+// ];
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] =
@@ -237,7 +298,7 @@ export default function Gallery() {
           </div>
 
           {/* FILTER BUTTONS */}
-          <div className="vg-gallery-filters">
+          {/* <div className="vg-gallery-filters">
             {categories.map((category) => (
               <button
                 type="button"
@@ -256,7 +317,7 @@ export default function Gallery() {
                 {category}
               </button>
             ))}
-          </div>
+          </div> */}
 
           {/* GALLERY GRID */}
           <div className="row g-4">

@@ -37,7 +37,7 @@ const Destination = () => {
 
   const renderDestination = (destination) => (
     <a
-      href="/details-with-gallery"
+      href=""
       className="destination-banner"
       key={destination.country}
     >
@@ -54,7 +54,7 @@ const Destination = () => {
 
         <div className="destination-info">
           <div className="destination-name">
-            <p className="pera">{destination.country}</p>
+            {/* <p className="pera">{destination.country}</p> */}
 
             <div className="location">
               <i className="ri-map-pin-line"></i>

@@ -27,47 +27,45 @@ const SpecialOffers = () => {
         <div className="row g-4">
 
           {/* First Banner - Airport Cab Service */}
-          <div className="col-lg-6 col-md-6">
-            <a
-              href="/pune-to-mumbai-airport-cab"
-              className="offer-banner imgEffect4 wow fadeInLeft"
-              data-wow-delay="0s"
-            >
-              <img
-                src="/images/offer-1.png"
-                alt="Virendra Cabs Airport Taxi Service in Pune"
-              />
+         <div className="col-lg-6 col-md-6">
+  <a
+    href="/pune-airport-cab-service"
+    className="offer-banner imgEffect4 wow fadeInLeft"
+    data-wow-delay="0s"
+  >
+    <img
+      src="/images/offer-1.png"
+      alt="Virendra Cabs Pune Airport Taxi Service"
+    />
 
-              <div className="offer-content">
+    <div className="offer-content">
+      <p className="highlights-text">
+        Convenient Airport Transfers
+      </p>
 
-                <p className="highlights-text">
-                  Convenient Airport Transfers
-                </p>
+      <h4 className="title">
+        Pune Airport Cab Service
+      </h4>
 
-                <h4 className="title">
-                  Airport Cab Service
-                </h4>
+      <p className="pera">
+        Reliable airport pickup and drop services
+        for comfortable and hassle-free travel in Pune.
+      </p>
 
-                <p className="pera">
-                  Comfortable airport pickup and drop
-                  services for convenient travel.
-                </p>
+      <div className="location">
+        <i className="ri-map-pin-line"></i>
 
-                <div className="location">
-                  <i className="ri-map-pin-line"></i>
+        <p className="name">
+          Pune Airport Pickup & Drop
+        </p>
+      </div>
 
-                  <p className="name">
-                    Pune to Mumbai Airport
-                  </p>
-                </div>
-
-                <div className="btn-secondary-sm radius-30">
-                  Book Your Cab
-                </div>
-
-              </div>
-            </a>
-          </div>
+      <div className="btn-secondary-sm radius-30">
+        Book Your Cab
+      </div>
+    </div>
+  </a>
+</div>
 
           {/* Second Banner - Outstation Cab Service */}
           <div className="col-lg-6 col-md-6">

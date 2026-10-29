@@ -3,11 +3,11 @@ import React from "react";
 import "../css/FleetHighway.css";
 
 const cars = [
-  "/images/Fleet/10-Seater-urbania.jpg",
-  "/images/Fleet/13-Seater-urbania.jpg",
-  "/images/Fleet/17-Seater-Tempo-Traveller.jpg",
-  "/images/Fleet/17-Seater-urbania.jpg",
-  "/images/Fleet/20-Seater-Tempo-Traveller.jpg",
+  "/images/fleet/Innova-Crysta.jpg",
+  "/images/fleet/Kia-Carens.jpg",
+  "/images/fleet/Aura-Hyundai.jpg",
+  "/images/fleet/Toyota-Rumion.jpg",
+  "/images/fleet/Maruti-Ertiga.jpg",
 ];
 
 const FleetHighway = () => {
