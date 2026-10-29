@@ -15585,7 +15585,7 @@ h3#pop_msg strong {
 }
 
 .irs-bar,.irs-bar-edge,.irs-line-left,.irs-line-mid,.irs-line-right,.irs-slider {
-    background: url(../img/sprite-skin-flat.html) repeat-x
+    /* background: url(../img/sprite-skin-flat.html) repeat-x */
 }
 
 .irs {
