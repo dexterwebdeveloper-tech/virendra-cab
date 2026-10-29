@@ -1,0 +1,296 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.virendra-fleet {
+  --vc-navy: #142c50;
+  --vc-orange: #f97316;
+  --vc-blue: #159bd7;
+  --vc-text: #53627a;
+
+  padding: 15px 0;
+  background: #cadadf;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HEADING */
+
+.virendra-fleet .fleet-heading {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 42px;
+}
+
+.virendra-fleet .fleet-subtitle {
+  display: inline-block;
+  color: var(--vc-orange);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.virendra-fleet .fleet-heading h2 {
+  color: var(--vc-navy);
+  font-size: clamp(30px, 3.5vw, 42px);
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.virendra-fleet .fleet-heading h2 span {
+  color: var(--vc-orange);
+}
+
+.virendra-fleet .fleet-heading p {
+  font-size: 16px;
+  color: var(--vc-text);
+  line-height: 1.8;
+}
+
+/* CARD */
+
+.virendra-fleet .fleet-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e4ebf3;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(20,44,80,0.05);
+  transition: all 0.3s ease;
+}
+
+.virendra-fleet .fleet-card:hover {
+  transform: translateY(-5px);
+  border-color: #b9ddf3;
+  box-shadow: 0 15px 35px rgba(20,44,80,0.12);
+}
+
+/* IMAGE */
+
+.virendra-fleet .fleet-image {
+  position: relative;
+  height: 230px;
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    #f3faff,
+    #ffffff
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #e9eff5;
+}
+
+.virendra-fleet .fleet-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+.virendra-fleet .fleet-card:hover .fleet-image img {
+  transform: scale(1.05);
+}
+
+.virendra-fleet .fleet-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 1;
+  padding: 7px 12px;
+  border-radius: 6px;
+  background: var(--vc-navy);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* CONTENT */
+
+.virendra-fleet .fleet-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 23px;
+}
+
+.virendra-fleet .fleet-title-row {
+  margin-bottom: 14px;
+}
+
+.virendra-fleet .fleet-title-row h3 {
+  color: var(--vc-navy);
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+
+/* CAPACITY */
+
+.virendra-fleet .fleet-capacity {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #087db8;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.virendra-fleet .fleet-capacity i {
+  font-size: 19px;
+}
+
+/* DESCRIPTION */
+
+.virendra-fleet .fleet-description {
+  color: var(--vc-text);
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+
+/* FEATURES */
+
+.virendra-fleet .fleet-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin-bottom: 24px;
+}
+
+.virendra-fleet .fleet-features span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #455672;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.virendra-fleet .fleet-features i {
+  color: var(--vc-blue);
+  font-size: 17px;
+}
+
+/* FULL WIDTH BUTTON */
+
+.virendra-fleet .fleet-book-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  margin-top: auto;
+  padding: 14px 19px;
+  border-radius: 9px;
+  background: var(--vc-orange);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.virendra-fleet .fleet-book-btn i {
+  font-size: 21px;
+  transition: transform 0.3s ease;
+}
+
+.virendra-fleet .fleet-book-btn:hover {
+  background: var(--vc-navy);
+  color: #fff;
+}
+
+.virendra-fleet .fleet-book-btn:hover i {
+  transform: translateX(4px);
+}
+
+/* BOTTOM BUTTON */
+
+.virendra-fleet .fleet-bottom {
+  text-align: center;
+  margin-top: 42px;
+}
+
+.virendra-fleet .fleet-view-all {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px 30px;
+  border-radius: 9px;
+  background: var(--vc-navy);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.virendra-fleet .fleet-view-all:hover {
+  background: var(--vc-orange);
+  color: #fff;
+}
+
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .virendra-fleet .fleet-image {
+    height: 190px;
+    padding: 12px;
+  }
+
+  .virendra-fleet .fleet-content {
+    padding: 17px;
+  }
+
+  .virendra-fleet .fleet-title-row h3 {
+    font-size: 19px;
+  }
+
+  .virendra-fleet .fleet-features {
+    gap: 6px 10px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .virendra-fleet {
+    padding: 50px 0;
+  }
+
+  .virendra-fleet .fleet-heading {
+    margin-bottom: 30px;
+  }
+
+  .virendra-fleet .fleet-heading h2 {
+    font-size: 29px;
+  }
+
+  .virendra-fleet .fleet-image {
+    height: 240px;
+  }
+
+  .virendra-fleet .fleet-content {
+    padding: 21px;
+  }
+
+  .virendra-fleet .fleet-view-all {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .virendra-fleet .fleet-card,
+  .virendra-fleet .fleet-image img,
+  .virendra-fleet .fleet-book-btn,
+  .virendra-fleet .fleet-book-btn i,
+  .virendra-fleet .fleet-view-all {
+    transition: none;
+  }
+}

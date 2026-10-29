@@ -1,0 +1,394 @@
+
+/* VIRENDRA CABS CONTACT SECTION */
+
+.vcontact-section {
+  --vc-blue: #087bb8;
+  --vc-navy: #082b4d;
+  --vc-orange: #f58220;
+
+  padding: 5px 0;
+  background: linear-gradient(
+    135deg,
+    #e8f5ff 0%,
+    #f4faff 50%,
+    #fff0df 100%
+  );
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.vcontact-section,
+.vcontact-section * {
+  box-sizing: border-box;
+}
+
+/* HEADING */
+
+.vcontact-heading {
+  max-width: 750px;
+  text-align: center;
+  margin: 0 auto 45px;
+}
+
+.vcontact-subtitle {
+  display: inline-block;
+  padding: 10px 19px;
+  border-radius: 30px;
+  background: #ffead6;
+  border: 1px solid #ffd2a4;
+  color: #b9570b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  margin-bottom: 18px;
+}
+
+.vcontact-heading h2 {
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 800;
+  color: var(--vc-navy);
+  margin: 0 0 17px;
+}
+
+.vcontact-heading h2 span {
+  color: var(--vc-orange);
+}
+
+.vcontact-heading p {
+  color: #526a7e;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* CONTACT CARDS */
+
+.vcontact-card {
+  height: 100%;
+  min-height: 345px;
+  padding: 30px 25px;
+  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: transform .3s ease,
+              box-shadow .3s ease;
+}
+
+.vcontact-blue {
+  background: linear-gradient(
+    145deg,
+    #07365f,
+    #087bb8
+  );
+  color: white;
+  border-bottom: 5px solid var(--vc-orange);
+  box-shadow: 0 12px 30px rgba(8,75,125,.15);
+}
+
+.vcontact-orange {
+  background: linear-gradient(
+    145deg,
+    #f58220,
+    #dd6207
+  );
+  color: white;
+  border-bottom: 5px solid #07365f;
+  box-shadow: 0 12px 30px rgba(245,130,32,.16);
+}
+
+.vcontact-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 40px rgba(8,75,125,.2);
+}
+
+/* ICON */
+
+.vcontact-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,.16);
+  color: white;
+  margin-bottom: 23px;
+}
+
+.vcontact-card-label {
+  color: #ffe0b8;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.vcontact-card h3 {
+  color: white;
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0 0 13px;
+}
+
+.vcontact-card > p {
+  color: #e5f3ff;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0 0 17px;
+}
+
+.vcontact-orange > p {
+  color: #fff5e9;
+}
+
+/* CONTACT DETAILS */
+
+.vcontact-detail {
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  margin-bottom: 20px;
+}
+
+.vcontact-detail:hover {
+  color: #ffe0b8;
+}
+
+.vcontact-address {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  line-height: 1.7 !important;
+  margin-bottom: 20px !important;
+}
+
+.vcontact-address strong {
+  color: #ffbd7e;
+  font-size: 14px;
+}
+
+.vcontact-address span {
+  color: #eaf5ff;
+  font-size: 12px;
+}
+
+/* ACTION BUTTON */
+
+.vcontact-action {
+  margin-top: auto;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+  min-width: 150px;
+  padding: 12px 17px;
+  background: white;
+  color: #075487;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+  transition: .25s ease;
+}
+
+.vcontact-orange .vcontact-action {
+  color: #bd5407;
+}
+
+.vcontact-action:hover {
+  background: #ffe8cf;
+  color: #07365f;
+}
+
+.vcontact-action span {
+  font-size: 19px;
+}
+
+/* MAP SECTION */
+
+.vcontact-map-section {
+  margin-top: 55px;
+  background: #e5f4ff;
+  border: 1px solid #b9def3;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(8,75,125,.1);
+}
+
+.vcontact-map-heading {
+  padding: 30px 35px;
+  background: linear-gradient(
+    110deg,
+    #082b4d,
+    #087bb8
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.vcontact-map-heading span {
+  color: #ffb873;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.vcontact-map-heading h3 {
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+  margin: 9px 0;
+}
+
+.vcontact-map-heading p {
+  color: #d8eafa;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.vcontact-map-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 20px;
+  background: var(--vc-orange);
+  color: white;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: .25s;
+}
+
+.vcontact-map-btn:hover {
+  background: #dc6207;
+  color: white;
+}
+
+/* GOOGLE MAP */
+
+.vcontact-map-frame {
+  width: 100%;
+  height: 420px;
+  background: #dcecf7;
+}
+
+.vcontact-map-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* MAP FOOTER */
+
+.vcontact-map-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 30px;
+  background: #e5f4ff;
+  color: #0b4773;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.vcontact-map-footer span:last-child {
+  color: #d66b12;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+  .vcontact-card {
+    padding: 25px 20px;
+  }
+
+  .vcontact-card h3 {
+    font-size: 19px;
+  }
+
+  .vcontact-detail {
+    font-size: 13px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .vcontact-section {
+    padding: 55px 0;
+  }
+
+  .vcontact-heading {
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  .vcontact-heading h2 {
+    font-size: 30px;
+  }
+
+  .vcontact-heading p {
+    font-size: 13px;
+  }
+
+  .vcontact-card {
+    min-height: 0;
+    padding: 28px;
+  }
+
+  .vcontact-detail {
+    font-size: 16px;
+  }
+
+  .vcontact-map-section {
+    margin-top: 35px;
+  }
+
+  .vcontact-map-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 20px;
+  }
+
+  .vcontact-map-heading h3 {
+    font-size: 21px;
+  }
+
+  .vcontact-map-btn {
+    width: 100%;
+  }
+
+  .vcontact-map-frame {
+    height: 320px;
+  }
+
+  .vcontact-map-footer {
+    padding: 18px 20px;
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vcontact-card,
+  .vcontact-action,
+  .vcontact-map-btn {
+    transition: none;
+  }
+
+  .vcontact-card:hover {
+    transform: none;
+  }
+}

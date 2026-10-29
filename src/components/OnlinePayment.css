@@ -1,0 +1,579 @@
+
+/* VIRENDRA CABS ONLINE PAYMENT */
+
+.vpay-page {
+  --vpay-navy: #082b4d;
+  --vpay-blue: #087bb8;
+  --vpay-orange: #f58220;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.vpay-page,
+.vpay-page * {
+  box-sizing: border-box;
+}
+
+/* HERO */
+
+.vpay-hero {
+  background:
+    linear-gradient(110deg, #082b4d, #087bb8);
+  border-bottom: 5px solid #f58220;
+  padding: 75px 0;
+  color: white;
+}
+
+.vpay-hero-content {
+  max-width: 750px;
+}
+
+.vpay-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 30px;
+  color: #ffbd7e;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.vpay-hero h1 {
+  color: white;
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+.vpay-hero h1 span {
+  color: #ffad66;
+}
+
+.vpay-hero p {
+  color: #dbeefa;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.vpay-breadcrumb {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 22px;
+  font-size: 13px;
+}
+
+.vpay-breadcrumb a {
+  color: white;
+  text-decoration: none;
+}
+
+.vpay-breadcrumb strong,
+.vpay-breadcrumb > span {
+  color: #ffbd7e;
+}
+
+/* MAIN SECTION */
+
+.vpay-section {
+  padding: 15px 0;
+  background: linear-gradient(
+    135deg,
+    #e5f4ff,
+    #f5fbff 50%,
+    #fff0df
+  );
+}
+
+.vpay-section-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 45px;
+}
+
+.vpay-section-heading > span {
+  display: inline-block;
+  padding: 9px 18px;
+  background: #ffead5;
+  color: #b9570b;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 17px;
+}
+
+.vpay-section-heading h2 {
+  color: #082b4d;
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 800;
+  /* margin-bottom: 15px; */
+}
+
+.vpay-section-heading h2 em {
+  color: #f58220;
+  font-style: normal;
+}
+
+.vpay-section-heading p {
+  color: #526a7e;
+  line-height: 1.8;
+}
+
+/* FORM CARD */
+
+.vpay-form-card {
+  height: 100%;
+  padding: 35px;
+  border-radius: 20px;
+  background: white;
+  border: 1px solid #c8e3f3;
+  box-shadow: 0 12px 35px rgba(8,65,110,.09);
+}
+
+.vpay-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 24px;
+  margin-bottom: 27px;
+  border-bottom: 1px solid #e0edf6;
+}
+
+.vpay-card-heading-icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background: #e3f3ff;
+  color: #087bb8;
+  font-size: 24px;
+}
+
+.vpay-card-heading span {
+  color: #dc7018;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.vpay-card-heading h3 {
+  color: #082b4d;
+  font-size: 22px;
+  font-weight: 800;
+  margin: 6px 0 0;
+}
+
+.vpay-label {
+  display: block;
+  color: #123f62;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 9px;
+}
+
+.vpay-input {
+  width: 100%;
+  min-height: 54px;
+  padding: 13px 16px;
+  background: #f0f8ff;
+  border: 1px solid #c9e2f2;
+  border-radius: 10px;
+  color: #173f5e;
+  font-size: 14px;
+}
+
+.vpay-input:focus {
+  border-color: #087bb8;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(8,123,184,.12);
+}
+
+/* PAYMENT METHOD */
+
+.vpay-method-title {
+  color: #082b4d;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 8px 0 15px;
+}
+
+.vpay-method-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 19px;
+  background: #e7f5ff;
+  border: 2px solid #087bb8;
+  border-radius: 13px;
+}
+
+.vpay-method-icon {
+  width: 49px;
+  height: 49px;
+  border-radius: 12px;
+  background: #087bb8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+}
+
+.vpay-method-card strong {
+  color: #082b4d;
+  font-size: 15px;
+}
+
+.vpay-method-card p {
+  color: #61798d;
+  font-size: 12px;
+  margin: 5px 0 0;
+}
+
+.vpay-method-check {
+  margin-left: auto;
+  background: #f58220;
+  color: white;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+/* BUTTONS */
+
+.vpay-proceed-btn,
+.vpay-upi-btn,
+.vpay-confirm-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  border: 0;
+  border-radius: 11px;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.vpay-proceed-btn {
+  width: 100%;
+  background: linear-gradient(110deg, #f58220, #dc650b);
+  color: white;
+  margin-top: 10px;
+}
+
+.vpay-proceed-btn:hover {
+  background: #dc650b;
+}
+
+.vpay-upi-btn {
+  width: 100%;
+  background: #087bb8;
+  color: white;
+  margin-top: 18px;
+}
+
+.vpay-upi-btn:hover {
+  color: white;
+  background: #075487;
+}
+
+/* PAYMENT PANEL */
+
+.vpay-payment-panel {
+  margin-top: 32px;
+  padding: 27px;
+  background: #e8f6ff;
+  border: 1px solid #b9dff5;
+  border-radius: 15px;
+}
+
+.vpay-payment-panel-heading > span {
+  color: #d46a12;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.vpay-payment-panel-heading h3 {
+  color: #082b4d;
+  font-size: 21px;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.vpay-payment-panel-heading p {
+  color: #60798d;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.vpay-amount-display {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 12px;
+  background: #082b4d;
+  text-align: center;
+}
+
+.vpay-amount-display span {
+  display: block;
+  color: #b9d9ee;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.vpay-amount-display strong {
+  color: white;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.vpay-upi-details {
+  padding: 17px;
+  background: white;
+  border-radius: 10px;
+}
+
+.vpay-upi-details > span {
+  display: block;
+  color: #61798d;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.vpay-upi-details > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.vpay-upi-details strong {
+  color: #082b4d;
+  overflow-wrap: anywhere;
+}
+
+.vpay-upi-details button {
+  padding: 8px 15px;
+  border: 0;
+  border-radius: 8px;
+  background: #f58220;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.vpay-upi-note {
+  color: #60798d;
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 18px 0 0;
+}
+
+/* RIGHT PANEL */
+
+.vpay-info-card {
+  height: 100%;
+  padding: 33px 27px;
+  background: linear-gradient(150deg, #082b4d, #087bb8);
+  color: white;
+  border-radius: 20px;
+  border-bottom: 5px solid #f58220;
+}
+
+.vpay-info-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 17px;
+  background: rgba(255,255,255,.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffbd7e;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.vpay-info-card h3 {
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.vpay-info-card > p {
+  color: #d8eaf8;
+  font-size: 13px;
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+
+.vpay-info-item {
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.vpay-info-item > i {
+  color: #ffbd7e;
+  font-size: 18px;
+  margin-top: 4px;
+}
+
+.vpay-info-item span {
+  display: block;
+  color: #c5e1f4;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 7px;
+}
+
+.vpay-info-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.vpay-info-divider {
+  height: 1px;
+  background: rgba(255,255,255,.2);
+  margin: 28px 0;
+}
+
+.vpay-info-card h4 {
+  color: #ffbd7e;
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.vpay-info-card ul {
+  padding-left: 19px;
+  color: #d8eaf8;
+  font-size: 12px;
+  line-height: 2.2;
+}
+
+.vpay-help-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 15px;
+  background: #f58220;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.vpay-help-btn:hover {
+  background: #dd660d;
+  color: white;
+}
+
+/* VERIFICATION */
+
+.vpay-verification {
+  margin-top: 35px;
+  padding: 35px;
+  border-radius: 20px;
+  background: #e5f4ff;
+  border: 1px solid #b9dff5;
+}
+
+.vpay-verification-header {
+  margin-bottom: 27px;
+}
+
+.vpay-verification-header span {
+  color: #d46a12;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.vpay-verification-header h3 {
+  color: #082b4d;
+  font-size: 25px;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.vpay-verification-header p {
+  color: #60798d;
+  font-size: 13px;
+}
+
+.vpay-confirm-btn {
+  background: #087bb8;
+  color: white;
+  margin-top: 12px;
+}
+
+.vpay-confirm-btn:hover {
+  background: #075487;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 767px) {
+  .vpay-hero {
+    padding: 55px 0;
+  }
+
+  .vpay-hero h1 {
+    font-size: 38px;
+  }
+
+  .vpay-section {
+    padding: 55px 0;
+  }
+
+  .vpay-form-card,
+  .vpay-info-card,
+  .vpay-verification {
+    padding: 24px 18px;
+  }
+
+  .vpay-card-heading h3 {
+    font-size: 19px;
+  }
+
+  .vpay-section-heading h2 {
+    font-size: 30px;
+  }
+
+  .vpay-amount-display strong {
+    font-size: 28px;
+  }
+
+  .vpay-confirm-btn {
+    width: 100%;
+    font-size: 12px;
+  }
+}

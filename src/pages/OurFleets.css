@@ -1,0 +1,479 @@
+
+/* =====================================
+   VIRENDRA CABS - OUR FLEETS
+   PREMIUM BLUE + ORANGE UI
+===================================== */
+
+.vf-section,
+.vf-section * {
+  box-sizing: border-box;
+}
+
+.vf-section {
+  --vf-blue: #087bb8;
+  --vf-navy: #082b4d;
+  --vf-orange: #f58220;
+
+  padding: 85px 20px;
+  background: linear-gradient(
+    135deg,
+    #e8f5ff 0%,
+    #f5fbff 48%,
+    #fff0df 100%
+  );
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.vf-container {
+  max-width: 1240px;
+  margin: auto;
+}
+
+/* HEADING */
+
+.vf-heading {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 35px;
+}
+
+.vf-eyebrow {
+  display: inline-block;
+  padding: 10px 19px;
+  border-radius: 30px;
+  background: #ffead5;
+  color: #c45b08;
+  border: 1px solid #ffd0a0;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  margin-bottom: 18px;
+}
+
+.vf-heading h2 {
+  color: var(--vf-navy);
+  font-size: clamp(30px, 4vw, 45px);
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 17px;
+}
+
+.vf-heading h2 span {
+  color: var(--vf-orange);
+}
+
+.vf-heading p {
+  color: #526a7e;
+  font-size: 15px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* FILTERS */
+
+.vf-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.vf-filter-btn {
+  padding: 12px 23px;
+  border-radius: 30px;
+  border: 1px solid #badcf0;
+  background: #e8f5ff;
+  color: #0a5687;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+
+.vf-filter-btn:hover {
+  background: #d4edff;
+  border-color: var(--vf-blue);
+}
+
+.vf-filter-btn.active {
+  background: linear-gradient(
+    110deg,
+    #f58220,
+    #dc6207
+  );
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 7px 18px rgba(245,130,32,.22);
+}
+
+/* GRID */
+
+.vf-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 23px;
+}
+
+/* FLEET CARD */
+
+.vf-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  background: linear-gradient(
+    155deg,
+    #e0f2ff,
+    #f5fbff
+  );
+  border: 1px solid #b9dff5;
+  box-shadow: 0 9px 28px rgba(8,77,127,.07);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.vf-card:nth-child(even) {
+  background: linear-gradient(
+    155deg,
+    #ffead5,
+    #fff9f1
+  );
+  border-color: #f2d0ae;
+}
+
+.vf-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 40px rgba(8,77,127,.16);
+}
+
+/* IMAGE */
+
+.vf-image-wrap {
+  position: relative;
+  height: 205px;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    #cceaff,
+    #f1faff
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vf-card:nth-child(even) .vf-image-wrap {
+  background: linear-gradient(
+    135deg,
+    #ffe1bf,
+    #fff4e6
+  );
+}
+
+.vf-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 22px 12px 8px;
+  transition: transform .4s ease;
+}
+
+.vf-card:hover .vf-image-wrap img {
+  transform: scale(1.08);
+}
+
+.vf-category {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  z-index: 2;
+  padding: 7px 12px;
+  border-radius: 30px;
+  background: var(--vf-blue);
+  color: white;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.vf-card:nth-child(even) .vf-category {
+  background: var(--vf-orange);
+}
+
+.vf-vehicle-count {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 30px;
+  font-weight: 900;
+  color: rgba(8,75,125,.15);
+}
+
+/* CONTENT */
+
+.vf-card-content {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.vf-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.vf-title-row h3 {
+  color: #073f6c;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.vf-card:nth-child(even) .vf-title-row h3 {
+  color: #9b4b0b;
+}
+
+.vf-seat-icon {
+  color: var(--vf-orange);
+  font-size: 23px;
+}
+
+.vf-seats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 11px;
+  color: #0b689c;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.vf-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--vf-orange);
+}
+
+.vf-description {
+  margin: 15px 0;
+  color: #4c6276;
+  font-size: 15px;
+  line-height: 1.85;
+  min-height: 65px;
+}
+
+.vf-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 22px;
+}
+
+.vf-features > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 9px;
+  background: rgba(255,255,255,.7);
+  border: 1px solid rgba(10,105,160,.12);
+  border-radius: 7px;
+  color: #385b75;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.vf-check {
+  color: var(--vf-orange);
+  font-weight: 900;
+}
+
+/* ENQUIRY BUTTON */
+
+.vf-enquire-btn {
+  width: 100%;
+  margin-top: auto;
+  padding: 13px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    110deg,
+    #087bb8,
+    #075487
+  );
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: .25s ease;
+}
+
+.vf-card:nth-child(even) .vf-enquire-btn {
+  background: linear-gradient(
+    110deg,
+    #f58220,
+    #dc6207
+  );
+}
+
+.vf-enquire-btn span {
+  font-size: 20px;
+}
+
+.vf-enquire-btn:hover {
+  filter: brightness(1.1);
+}
+
+/* BOTTOM BANNER */
+
+.vf-bottom-banner {
+  margin-top: 55px;
+  padding: 38px 42px;
+  background: linear-gradient(
+    110deg,
+    #082b4d,
+    #087bb8
+  );
+  border-radius: 20px;
+  border-bottom: 5px solid var(--vf-orange);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  box-shadow: 0 15px 35px rgba(7,65,110,.15);
+}
+
+.vf-bottom-content > span {
+  color: #ffad69;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.vf-bottom-content h3 {
+  margin: 12px 0;
+  color: white;
+  font-size: 25px;
+}
+
+.vf-bottom-content p {
+  color: #d8eafa;
+  font-size: 13px;
+  line-height: 1.8;
+  max-width: 650px;
+  margin: 0;
+}
+
+.vf-bottom-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-shrink: 0;
+  padding: 16px 25px;
+  border-radius: 11px;
+  background: var(--vf-orange);
+  color: white;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: .25s;
+}
+
+.vf-bottom-btn:hover {
+  background: #df690d;
+  transform: translateY(-2px);
+}
+
+/* TABLET */
+
+@media (max-width: 1100px) {
+  .vf-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 850px) {
+  .vf-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .vf-bottom-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 550px) {
+  .vf-section {
+    padding: 55px 15px;
+  }
+
+  .vf-heading h2 {
+    font-size: 30px;
+  }
+
+  .vf-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .vf-image-wrap {
+    height: 235px;
+  }
+
+  .vf-card-content {
+    padding: 24px;
+  }
+
+  .vf-title-row h3 {
+    font-size: 20px;
+  }
+
+  .vf-description {
+    min-height: 0;
+    font-size: 13px;
+  }
+
+  .vf-bottom-banner {
+    padding: 28px 22px;
+    margin-top: 35px;
+  }
+
+  .vf-bottom-content h3 {
+    font-size: 22px;
+  }
+
+  .vf-bottom-btn {
+    width: 100%;
+  }
+
+  .vf-filter-btn {
+    padding: 10px 14px;
+    font-size: 11px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vf-card,
+  .vf-image-wrap img,
+  .vf-enquire-btn,
+  .vf-bottom-btn {
+    transition: none;
+  }
+
+  .vf-card:hover,
+  .vf-bottom-btn:hover,
+  .vf-card:hover .vf-image-wrap img {
+    transform: none;
+  }
+}

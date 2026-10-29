@@ -1,38 +1,3300 @@
-.App {
+.vir-breadcrumb-hero {
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      100deg,
+      rgba(5, 30, 57, 0.88) 0%,
+      rgba(5, 66, 105, 0.65) 50%,
+      rgba(4, 53, 88, 0.25) 100%
+    ),
+    url("../public/images/hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vir-breadcrumb-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.vir-breadcrumb-content {
+  color: #fff;
+}
+
+.vir-breadcrumb-label {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.vir-breadcrumb-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.vir-breadcrumb-bottom-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #f5a623;
+}
+
+.bgg-darkk{
+  background-color: #F36422;
+}
+
+
+a{
+  text-decoration: none !important;
+}
+
+
+.nav-link {
+    color: #F36422 !important;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-item {
+        border-bottom: 1px solid #F36422;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   VIRENDRA CABS - PREMIUM FOOTER
+   Theme: Navy Blue | Sky Blue | Orange | White
+========================================================== */
+
+.footer-four {
+  --footer-navy: #082b4d;
+  --footer-deep: #041a30;
+  --footer-blue: #087bb8;
+  --footer-orange: #f58220;
+  --footer-white: #ffffff;
+  --footer-muted: #c5d9e8;
+
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 5% 10%,
+      rgba(8, 123, 184, 0.20),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 95% 90%,
+      rgba(245, 130, 32, 0.10),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #082b4d 0%,
+      #05233e 50%,
+      #041a30 100%
+    );
+  color: var(--footer-white);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.footer-four,
+.footer-four * {
+  box-sizing: border-box;
+}
+
+/* TOP ACCENT */
+
+.footer-four::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    #087bb8,
+    #f58220,
+    #087bb8
+  );
+  z-index: 2;
+}
+
+/* ==========================================================
+   FOOTER TOP
+========================================================== */
+
+.footer-four .footer-top {
+  position: relative;
+  padding: 65px 0 55px !important;
+  margin: 0 !important;
+  width: 100%;
+  background: transparent;
+}
+
+.footer-four .footer-top > .container {
+  max-width: 1320px;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.footer-four .footer-top > .container > .row {
+  row-gap: 35px;
+}
+
+.footer-four .footer-widget {
+  margin-bottom: 25px;
+}
+
+/* ==========================================================
+   LOGO
+========================================================== */
+
+.footer-four .footer-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 220px;
+  padding: 12px 16px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.35);
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+  transition: transform .3s ease;
+}
+
+.footer-four .footer-logo:hover {
+  transform: translateY(-3px);
+}
+
+.footer-four .footer-logo img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 95px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ==========================================================
+   COMPANY DESCRIPTION
+========================================================== */
+
+.footer-four .footer-contact-info {
+  padding-right: 12px;
+}
+
+.footer-four .footer-contact-info > p:first-child {
+  color: #d6e6f2 !important;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.95;
+  margin: 20px 0 25px;
+}
+
+.footer-four .footer-contact-info p {
+  color: #d6e6f2;
+  line-height: 1.8;
+}
+
+/* ==========================================================
+   PHONE AND ADDRESS
+========================================================== */
+
+.footer-four .footer-contact-info p.d-flex {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 10px;
+  background: rgba(255,255,255,.06);
+  transition: .3s ease;
+}
+
+.footer-four .footer-contact-info p.d-flex:hover {
+  background: rgba(8,123,184,.18);
+  border-color: rgba(245,130,32,.4);
+}
+
+.footer-four .footer-contact-info p.d-flex > i {
+  color: #f58220 !important;
+  font-size: 15px;
+}
+
+.footer-four .footer-contact-info p.d-flex a {
+  color: white !important;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color .25s;
+}
+
+.footer-four .footer-contact-info p.d-flex a:hover {
+  color: #ffb26f !important;
+}
+
+/* ADDRESS */
+
+.footer-four .footer-contact-info h6 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff !important;
+  font-size: 15px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.footer-four .footer-contact-info h6 i {
+  color: #f58220 !important;
+  font-size: 16px;
+}
+
+.footer-four .footer-contact-info p.d-fle {
+  padding: 16px;
+  background: rgba(255,255,255,.045);
+  border-left: 3px solid #f58220;
+  border-radius: 9px;
+  font-size: 12px;
+  line-height: 1.9;
+  color: #d6e6f2 !important;
+}
+
+/* ==========================================================
+   GOOGLE MAP
+========================================================== */
+
+.footer-four .footer-contact iframe {
+  display: block;
+  width: 100%;
+  height: 250px;
+  margin-top: 20px;
+  border: 2px solid rgba(255,255,255,.15);
+  border-radius: 13px;
+  box-shadow: 0 12px 28px rgba(0,0,0,.16);
+  transition: border-color .3s;
+}
+
+.footer-four .footer-contact iframe:hover {
+  border-color: #f58220;
+}
+
+/* ==========================================================
+   SOCIAL MEDIA ICONS
+========================================================== */
+
+.footer-four .footer-contact > li {
+  display: flex !important;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px !important;
+  margin-top: 23px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-four .footer-contact > li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(255,255,255,.09);
+  border: 1px solid rgba(255,255,255,.13);
+  color: white;
+  text-decoration: none;
+  transition:
+    background .3s ease,
+    transform .3s ease,
+    border-color .3s ease;
+}
+
+.footer-four .footer-contact > li a i {
+  color: #ffffff !important;
+  font-size: 15px;
+  transition: color .3s ease;
+}
+
+.footer-four .footer-contact > li a:hover {
+  transform: translateY(-4px);
+  background: #f58220;
+  border-color: #f58220;
+  box-shadow: 0 7px 20px rgba(245,130,32,.25);
+}
+
+/* ==========================================================
+   FOOTER TITLES
+========================================================== */
+
+.footer-four .footer-title {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.4;
+  margin: 8px 0 27px;
+  padding-bottom: 15px;
+}
+
+.footer-four .footer-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 55px;
+  height: 4px;
+  border-radius: 20px;
+  background: linear-gradient(90deg,#f58220,#ffbc82);
+}
+
+/* ==========================================================
+   SERVICE LINK LIST
+========================================================== */
+
+.footer-four .footer-menu ul {
+  margin: 0;
+  padding: 0 !important;
+  list-style: none;
+}
+
+.footer-four .footer-menu ul li {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid rgba(255,255,255,.055);
+}
+
+.footer-four .footer-menu ul li:last-child {
+  border-bottom: 0;
+}
+
+.footer-four .footer-menu ul li a {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 8px;
+  color: #c9dce9;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.65;
+  text-decoration: none;
+  border-radius: 7px;
+  transition:
+    color .25s ease,
+    background .25s ease,
+    padding-left .25s ease;
+}
+
+/* SERVICE ICON */
+
+.footer-four .footer-menu ul li a i,
+.footer-four .footer-menu ul li a .darkcolor {
+  flex: 0 0 auto;
+  margin-top: 4px;
+  color: #f58220 !important;
+  font-size: 12px;
+  transition: transform .25s ease;
+}
+
+.footer-four .footer-menu ul li a:hover {
+  color: #ffffff;
+  background: rgba(8,123,184,.20);
+  padding-left: 15px;
+}
+
+.footer-four .footer-menu ul li a:hover i {
+  transform: translateX(3px);
+  color: #ffb26f !important;
+}
+
+/* ==========================================================
+   FOOTER BOTTOM
+========================================================== */
+
+.footer-four .footer-bottom {
+  position: relative;
+  width: 100%;
+  padding: 22px 0 !important;
+  margin: 0;
+  background: #031525;
+  border-top: 1px solid rgba(255,255,255,.12);
+}
+
+.footer-four .footer-bottom .container {
+  max-width: 1320px;
+}
+
+.footer-four .copyright {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-four .copyright-text {
+  margin: 0;
+  color: #d1e1ee !important;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer-four .copyright-text a {
+  color: #f58220;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color .25s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.footer-four .copyright-text .darkcolorrr {
+  color: #ffad66 !important;
+  font-weight: 800;
+}
+
+.footer-four .copyright-text a:hover,
+.footer-four .copyright-text a:hover .darkcolorrr {
+  color: #ffffff !important;
+}
+
+/* ==========================================================
+   DESKTOP
+========================================================== */
+
+@media (min-width: 1200px) {
+  .footer-four .footer-top > .container {
+    max-width: 1320px;
+  }
+
+  .footer-four .footer-menu ul li a {
+    font-size: 12px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 991px) {
+  .footer-four .footer-top {
+    padding: 50px 0 35px !important;
+  }
+
+  .footer-four .footer-contact-info {
+    padding-right: 0;
+  }
+
+  .footer-four .footer-logo {
+    max-width: 210px;
+  }
+
+  .footer-four .footer-title {
+    margin-top: 15px;
+  }
+
+  .footer-four .footer-contact iframe {
+    max-width: 100%;
+  }
+
+  .footer-four .footer-menu ul li a {
+    font-size: 13px;
+  }
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+  .footer-four .footer-top {
+    padding: 40px 0 25px !important;
+  }
+
+  .footer-four .footer-top > .container {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .footer-four .footer-logo {
+    max-width: 190px;
+  }
+
+  .footer-four .footer-contact-info > p:first-child {
+    font-size: 13px;
+    line-height: 1.85;
+  }
+
+  .footer-four .footer-contact iframe {
+    height: 230px;
+  }
+
+  .footer-four .footer-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .footer-four .footer-menu ul li a {
+    padding: 9px 6px;
+    font-size: 12px;
+  }
+
+  .footer-four .footer-menu ul li a:hover {
+    padding-left: 10px;
+  }
+
+  .footer-four .footer-bottom {
+    padding: 20px 10px !important;
+  }
+
+  .footer-four .copyright-text {
+    font-size: 11px;
+    line-height: 2;
+  }
+}
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 400px) {
+  .footer-four .footer-logo {
+    max-width: 170px;
+  }
+
+  .footer-four .footer-contact iframe {
+    height: 210px;
+  }
+
+  .footer-four .footer-contact-info p.d-flex a {
+    font-size: 13px;
+  }
+
+  .footer-four .footer-contact > li a {
+    width: 37px;
+    height: 37px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================
+   VIRENDRA CABS - TOP PLACES
+   ONE CARD PER ROW | PREMIUM BLUE & ORANGE UI
+================================================ */
+
+.topPlaces {
+  --vc-navy: #082b4d;
+  --vc-blue: #087bb8;
+  --vc-orange: #f58220;
+
   display: flex;
   flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  margin: 35px 0;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg,
+    #edf8ff 0%,
+    #ffffff 55%,
+    #fff7ef 100%
+  );
+  border: 1px solid #d5eaf8;
+}
+
+.topPlaces,
+.topPlaces * {
+  box-sizing: border-box;
+}
+
+/* SECTION HEADING */
+
+.topPlaces .sectionLead {
+  position: relative;
+  width: 100%;
+  margin: 0 0 14px;
+  padding: 0 0 18px;
+  color: var(--vc-navy);
+  font-size: clamp(23px, 3vw, 30px);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.topPlaces .sectionLead::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 75px;
+  height: 4px;
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    var(--vc-orange),
+    var(--vc-blue)
+  );
+}
+
+/* FULL WIDTH CARD */
+
+.topPlaces .placeCard {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  min-width: 0;
+  min-height: 105px;
+  padding: 20px 24px;
+  margin: 0;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #d5e8f5;
+  border-left: 4px solid var(--vc-blue);
+  box-shadow: 0 5px 18px rgba(8,43,77,.045);
+  overflow: hidden;
+  transition:
+    background .25s ease,
+    border-color .25s ease,
+    box-shadow .25s ease,
+    transform .25s ease;
+}
+
+/* ALTERNATING ACCENTS */
+
+.topPlaces .placeCard:nth-of-type(even) {
+  border-left-color: var(--vc-orange);
+  background: #fffaf5;
+}
+
+.topPlaces .placeCard:hover {
+  transform: translateX(5px);
+  background: #f0f9ff;
+  border-color: #b3dff5;
+  border-left-color: var(--vc-orange);
+  box-shadow: 0 12px 26px rgba(8,43,77,.11);
+}
+
+.topPlaces .placeCard:focus-visible {
+  outline: 3px solid var(--vc-orange);
+  outline-offset: 3px;
+}
+
+/* NUMBER BADGE */
+
+.topPlaces .placeBadge {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 55px;
+  height: 55px;
+  flex: 0 0 55px;
+  border-radius: 13px;
+  background: linear-gradient(
+    135deg,
+    #087bb8,
+    #082b4d
+  );
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 900;
+  box-shadow: 0 6px 16px rgba(8,123,184,.16);
 }
 
-.App-link {
-  color: #61dafb;
+.topPlaces .placeCard:nth-of-type(even) .placeBadge {
+  background: linear-gradient(
+    135deg,
+    #f58220,
+    #d9680b
+  );
+  box-shadow: 0 6px 16px rgba(245,130,32,.15);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* PLACE CONTENT */
+
+.topPlaces .placeBody {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+}
+
+.topPlaces .placeTitle {
+  margin: 0;
+  color: var(--vc-navy);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.topPlaces .placeDesc {
+  margin: 0;
+  color: #5b7183;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.topPlaces .placeCard:hover .placeTitle {
+  color: var(--vc-blue);
+}
+
+/* RIGHT ARROW */
+
+.topPlaces .placeArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  border-radius: 50%;
+  background: #e5f4ff;
+  border: 1px solid #c7e7f9;
+  color: var(--vc-blue);
+  font-size: 29px;
+  line-height: 1;
+  transition:
+    transform .25s ease,
+    background .25s ease,
+    color .25s ease;
+}
+
+.topPlaces .placeCard:hover .placeArrow {
+  transform: translateX(4px);
+  background: var(--vc-orange);
+  color: #ffffff;
+  border-color: var(--vc-orange);
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+  .topPlaces {
+    padding: 24px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .topPlaces .placeCard {
+    gap: 15px;
+    padding: 18px;
+  }
+
+  .topPlaces .placeTitle {
+    font-size: 16px;
+  }
+
+  .topPlaces .placeDesc {
+    font-size: 12px;
   }
 }
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .topPlaces {
+    gap: 12px;
+    padding: 17px 12px;
+    margin: 25px 0;
+    border-radius: 14px;
+  }
+
+  .topPlaces .sectionLead {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .topPlaces .placeCard {
+    width: 100%;
+    min-height: auto;
+    gap: 12px;
+    padding: 16px 12px;
+    border-radius: 11px;
+  }
+
+  .topPlaces .placeBadge {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  .topPlaces .placeTitle {
+    font-size: 15px;
+  }
+
+  .topPlaces .placeDesc {
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .topPlaces .placeArrow {
+    width: 28px;
+    height: 28px;
+    flex: 0 0 28px;
+    font-size: 23px;
+  }
+
+  .topPlaces .placeCard:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .topPlaces .placeCard {
+    gap: 9px;
+    padding: 13px 10px;
+  }
+
+  .topPlaces .placeBadge {
+    width: 35px;
+    height: 35px;
+    flex-basis: 35px;
+    font-size: 12px;
+  }
+
+  .topPlaces .placeTitle {
+    font-size: 14px;
+  }
+
+  .topPlaces .placeDesc {
+    font-size: 11.5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .topPlaces .placeCard,
+  .topPlaces .placeArrow {
+    transition: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================
+   VIRENDRA CABS - COLORFUL PREMIUM SERVICES
+   ONE FULL-WIDTH CARD PER ROW
+============================================== */
+
+.services-section {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 15px;
+  width: 100%;
+  margin: 30px 0;
+  padding: 0;
+}
+
+.services-section,
+.services-section * {
+  box-sizing: border-box;
+}
+
+/* SERVICE CARD */
+
+.services-section .service-card {
+  position: relative;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  width: 100%;
+  min-width: 0;
+  min-height: 115px;
+  padding: 23px 25px 23px 30px;
+  margin: 0;
+
+  background: linear-gradient(
+    110deg,
+    #e8f6ff 0%,
+    #ffffff 58%,
+    #f0faff 100%
+  );
+
+  border: 1px solid #b8dff4;
+  border-left: 5px solid #087bb8;
+  border-radius: 15px;
+
+  box-shadow: 0 6px 20px rgba(8,43,77,.07);
+  overflow: hidden;
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    border-color .3s ease,
+    background .3s ease;
+}
+
+/* ALTERNATE ORANGE CARD */
+
+.services-section .service-card:nth-child(even) {
+  background: linear-gradient(
+    110deg,
+    #fff0dd 0%,
+    #ffffff 58%,
+    #fff8ef 100%
+  );
+
+  border-color: #f8d5b2;
+  border-left-color: #f58220;
+}
+
+/* DECORATIVE CIRCLE */
+
+.services-section .service-card::before {
+  content: "";
+  position: absolute;
+  top: -75px;
+  right: -55px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: rgba(8,123,184,.09);
+  pointer-events: none;
+  transition: transform .35s ease;
+}
+
+.services-section .service-card:nth-child(even)::before {
+  background: rgba(245,130,32,.10);
+}
+
+/* BOTTOM ACCENT */
+
+.services-section .service-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    #087bb8,
+    #5fc6ff,
+    #f58220
+  );
+  opacity: .7;
+}
+
+/* HOVER */
+
+.services-section .service-card:hover {
+  transform: translateY(-4px);
+  border-color: #087bb8;
+  box-shadow: 0 14px 30px rgba(8,43,77,.13);
+}
+
+.services-section .service-card:nth-child(even):hover {
+  border-color: #f58220;
+}
+
+.services-section .service-card:hover::before {
+  transform: scale(1.3);
+}
+
+/* CONTENT */
+
+.services-section .service-content {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  min-width: 0;
+}
+
+.services-section .service-content h4 {
+  margin: 0;
+  color: #082b4d;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.services-section .service-card:nth-child(even) h4 {
+  color: #b95810;
+}
+
+/* COLORFUL UNDERLINE */
+
+.services-section .service-content .line {
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 12px 0;
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    #087bb8,
+    #49b8ed,
+    #f58220
+  );
+  transition: width .3s ease;
+}
+
+.services-section .service-card:nth-child(even) .line {
+  background: linear-gradient(
+    90deg,
+    #f58220,
+    #ffbc72,
+    #087bb8
+  );
+}
+
+.services-section .service-card:hover .line {
+  width: 100px;
+}
+
+/* DESCRIPTION */
+
+.services-section .service-content p {
+  margin: 0;
+  color: #435e73;
+  font-size: 13px;
+  font-weight: 450;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+
+/* ARROW ICON */
+
+.services-section .service-icon {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+
+  border-radius: 13px;
+
+  background: linear-gradient(
+    135deg,
+    #087bb8,
+    #082b4d
+  );
+
+  color: #ffffff;
+  font-size: 17px;
+
+  box-shadow: 0 6px 15px rgba(8,123,184,.22);
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+.services-section .service-card:nth-child(even) .service-icon {
+  background: linear-gradient(
+    135deg,
+    #ff9b3f,
+    #e56d10
+  );
+
+  box-shadow: 0 6px 15px rgba(245,130,32,.23);
+}
+
+.services-section .service-icon i {
+  color: #ffffff;
+}
+
+.services-section .service-card:hover .service-icon {
+  transform: translateX(5px);
+  box-shadow: 0 9px 20px rgba(8,43,77,.20);
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+  .services-section {
+    gap: 13px;
+  }
+
+  .services-section .service-card {
+    min-height: 105px;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .services-section .service-content h4 {
+    font-size: 17px;
+  }
+
+  .services-section .service-content p {
+    font-size: 12.5px;
+  }
+
+  .services-section .service-icon {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+  }
+}
+
+/* MOBILE - ONE CARD PER ROW */
+
+@media (max-width: 767px) {
+  .services-section {
+    flex-direction: column !important;
+    gap: 12px;
+    margin: 22px 0;
+  }
+
+  .services-section .service-card {
+    flex-direction: row !important;
+    align-items: center;
+    width: 100%;
+    min-height: 95px;
+
+    padding: 17px 13px 17px 17px;
+    gap: 11px;
+    border-radius: 12px;
+    border-left-width: 4px;
+  }
+
+  .services-section .service-content h4 {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .services-section .service-content .line {
+    width: 43px;
+    height: 3px;
+    margin: 9px 0;
+  }
+
+  .services-section .service-content p {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .services-section .service-icon {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+    border-radius: 10px;
+    font-size: 13px;
+  }
+
+  .services-section .service-card:hover {
+    transform: none;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+  .services-section .service-card {
+    padding: 14px 10px 14px 13px;
+    gap: 8px;
+  }
+
+  .services-section .service-content h4 {
+    font-size: 14px;
+  }
+
+  .services-section .service-content p {
+    font-size: 11.5px;
+  }
+
+  .services-section .service-icon {
+    width: 30px;
+    height: 30px;
+    flex-basis: 30px;
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .services-section .service-card,
+  .services-section .service-card::before,
+  .services-section .service-content .line,
+  .services-section .service-icon {
+    transition: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================================
+   VIRENDRA CABS - PREMIUM KEYWORD GRID
+   Compact | Colorful | Mobile Responsive
+=============================================== */
+
+.keyword-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+  margin: 25px 0;
+  padding: 22px;
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    #edf8ff 0%,
+    #ffffff 55%,
+    #fff4e9 100%
+  );
+  border: 1px solid #d6e8f4;
+}
+
+.keyword-grid,
+.keyword-grid * {
+  box-sizing: border-box;
+}
+
+/* KEYWORD TILE */
+
+.keyword-grid .keyword-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+  min-height: 57px;
+  padding: 12px 15px;
+
+  background: linear-gradient(
+    110deg,
+    #e7f5ff,
+    #ffffff
+  );
+
+  border: 1px solid #c5e4f6;
+  border-left: 3px solid #087bb8;
+  border-radius: 10px;
+
+  color: #082b4d;
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+
+  box-shadow: 0 3px 12px rgba(8,43,77,.035);
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease,
+    background .25s ease;
+}
+
+/* ALTERNATE ORANGE TILES */
+
+.keyword-grid .keyword-item:nth-child(even) {
+  background: linear-gradient(
+    110deg,
+    #fff0df,
+    #ffffff
+  );
+  border-color: #f6d5b5;
+  border-left-color: #f58220;
+}
+
+/* BULLET ICON */
+
+.keyword-grid .keyword-bullet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+
+  background: #087bb8;
+  color: transparent;
+  font-size: 0;
+  font-weight: 800;
+}
+
+/* REPLACE DASH WITH CHECKMARK */
+
+.keyword-grid .keyword-bullet::before {
+  content: "✓";
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.keyword-grid .keyword-item:nth-child(even) .keyword-bullet {
+  background: #f58220;
+}
+
+/* HOVER */
+
+.keyword-grid .keyword-item:hover {
+  transform: translateY(-3px);
+  background: #f1f9ff;
+  border-color: #087bb8;
+  box-shadow: 0 9px 20px rgba(8,43,77,.10);
+}
+
+.keyword-grid .keyword-item:nth-child(even):hover {
+  background: #fff4e9;
+  border-color: #f58220;
+}
+
+.keyword-grid .keyword-item:hover .keyword-bullet {
+  transform: scale(1.08);
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+  .keyword-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 11px;
+    padding: 18px;
+  }
+
+  .keyword-grid .keyword-item {
+    font-size: 12.5px;
+    padding: 11px 13px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 575px) {
+  .keyword-grid {
+    grid-template-columns: 1fr;
+    gap: 9px;
+    margin: 20px 0;
+    padding: 12px;
+    border-radius: 13px;
+  }
+
+  .keyword-grid .keyword-item {
+    min-height: 49px;
+    padding: 10px 12px;
+    gap: 10px;
+    font-size: 12px;
+    border-radius: 9px;
+  }
+
+  .keyword-grid .keyword-bullet {
+    width: 24px;
+    height: 24px;
+    flex-basis: 24px;
+    border-radius: 7px;
+  }
+
+  .keyword-grid .keyword-bullet::before {
+    font-size: 13px;
+  }
+
+  .keyword-grid .keyword-item:hover {
+    transform: none;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 360px) {
+  .keyword-grid {
+    padding: 9px;
+  }
+
+  .keyword-grid .keyword-item {
+    font-size: 11.5px;
+    padding: 9px 10px;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .keyword-grid .keyword-item,
+  .keyword-grid .keyword-bullet {
+    transition: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================
+   VIRENDRA CABS - WHY CHOOSE US
+   TWO EQUAL CARDS PER ROW
+================================================ */
+
+/* DESKTOP - EXACTLY TWO COLUMNS */
+
+.why-choose-section .bento-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 20px;
+  align-items: stretch;
+  grid-auto-flow: row;
+}
+
+/* REMOVE PREVIOUS LARGE BENTO SPANS */
+
+.why-choose-section .bento-grid .bento-card,
+.why-choose-section .bento-grid .bento-card:first-child,
+.why-choose-section .bento-grid .bento-card:nth-child(5) {
+  grid-column: auto !important;
+  grid-row: auto !important;
+  width: 100%;
+  min-width: 0;
+  min-height: 250px;
+  height: 100%;
+}
+
+/* EQUAL CARD CONTENT STRUCTURE */
+
+.why-choose-section .bento-card {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  padding: 30px;
+  border-radius: 18px;
+}
+
+/* SAME NUMBER POSITION */
+
+.why-choose-section .bento-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 52px;
+  height: 52px;
+  margin-bottom: 22px;
+
+  font-size: 20px;
+  font-weight: 900;
+}
+
+/* SAME HEADING STYLE */
+
+.why-choose-section .bento-card h4 {
+  width: 100%;
+  margin: 0 0 13px;
+
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+/* SAME DESCRIPTION STYLE */
+
+.why-choose-section .bento-card p {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+
+/* KEEP ORIGINAL COLOR COMBINATIONS */
+
+.why-choose-section .bento-card:nth-child(4n + 1) {
+  background: linear-gradient(135deg, #082b4d, #075587);
+  color: #ffffff;
+}
+
+.why-choose-section .bento-card:nth-child(4n + 2) {
+  background: linear-gradient(135deg, #f58220, #c9570a);
+  color: #ffffff;
+}
+
+.why-choose-section .bento-card:nth-child(4n + 3) {
+  background: linear-gradient(135deg, #e0f4ff, #bfe8ff);
+  color: #082b4d;
+}
+
+.why-choose-section .bento-card:nth-child(4n + 4) {
+  background: linear-gradient(135deg, #041b32, #087bb8);
+  color: #ffffff;
+}
+
+/* TABLET - STILL TWO COLUMNS */
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .why-choose-section .bento-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 15px;
+  }
+
+  .why-choose-section .bento-grid .bento-card {
+    min-height: 240px;
+    padding: 23px;
+  }
+
+  .why-choose-section .bento-card h4 {
+    font-size: 17px;
+  }
+
+  .why-choose-section .bento-card p {
+    font-size: 12px;
+  }
+}
+
+/* MOBILE - ONE FULL WIDTH CARD */
+
+@media (max-width: 575px) {
+  .why-choose-section {
+    padding: 22px 13px;
+  }
+
+  .why-choose-section .bento-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 13px;
+  }
+
+  .why-choose-section .bento-grid .bento-card,
+  .why-choose-section .bento-grid .bento-card:first-child,
+  .why-choose-section .bento-grid .bento-card:nth-child(5) {
+    grid-column: auto !important;
+    min-height: 200px;
+    padding: 22px 20px;
+  }
+
+  .why-choose-section .bento-number {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 16px;
+    font-size: 17px;
+  }
+
+  .why-choose-section .bento-card h4 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .why-choose-section .bento-card p {
+    font-size: 12px;
+    line-height: 1.75;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   VIRENDRA CABS - FIX TEXT VISIBILITY
+   Keep colorful design + equal card sizes
+========================================== */
+
+/* Default text on dark cards */
+#why-choose-section .bento-card,
+#why-choose-section .bento-card h4,
+#why-choose-section .bento-card p {
+  color: #ffffff !important;
+}
+
+/* Description on dark cards */
+#why-choose-section .bento-card p {
+  color: #f0f7ff !important;
+  opacity: 1 !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+/* NAVY BLUE CARD */
+#why-choose-section .bento-card:nth-child(4n + 1) {
+  background: linear-gradient(135deg, #082b4d, #075587);
+}
+
+#why-choose-section .bento-card:nth-child(4n + 1) h4 {
+  color: #ffffff !important;
+}
+
+#why-choose-section .bento-card:nth-child(4n + 1) p {
+  color: #e8f5ff !important;
+}
+
+/* ORANGE CARD */
+#why-choose-section .bento-card:nth-child(4n + 2) {
+  background: linear-gradient(135deg, #f58220, #c9570a);
+}
+
+#why-choose-section .bento-card:nth-child(4n + 2) h4 {
+  color: #ffffff !important;
+}
+
+#why-choose-section .bento-card:nth-child(4n + 2) p {
+  color: #ffffff !important;
+}
+
+/* LIGHT SKY BLUE CARD */
+#why-choose-section .bento-card:nth-child(4n + 3) {
+  background: linear-gradient(135deg, #e0f4ff, #bfe8ff);
+}
+
+#why-choose-section .bento-card:nth-child(4n + 3) h4 {
+  color: #082b4d !important;
+}
+
+#why-choose-section .bento-card:nth-child(4n + 3) p {
+  color: #29465c !important;
+}
+
+/* DARK BLUE CARD */
+#why-choose-section .bento-card:nth-child(4n + 4) {
+  background: linear-gradient(135deg, #041b32, #087bb8);
+}
+
+#why-choose-section .bento-card:nth-child(4n + 4) h4 {
+  color: #ffffff !important;
+}
+
+#why-choose-section .bento-card:nth-child(4n + 4) p {
+  color: #e8f5ff !important;
+}
+
+/* NUMBER BADGES */
+#why-choose-section .bento-card .bento-number {
+  color: #ffffff !important;
+}
+
+#why-choose-section
+.bento-card:nth-child(4n + 3)
+.bento-number {
+  color: #082b4d !important;
+}
+
+/* TWO EQUAL CARDS PER ROW */
+#why-choose-section .bento-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 20px;
+  align-items: stretch;
+}
+
+#why-choose-section .bento-card,
+#why-choose-section .bento-card:first-child,
+#why-choose-section .bento-card:nth-child(5) {
+  grid-column: auto !important;
+  grid-row: auto !important;
+  height: 100%;
+  min-width: 0;
+  min-height: 250px;
+}
+
+/* MOBILE */
+@media (max-width: 575px) {
+  #why-choose-section .bento-grid {
+    grid-template-columns: 1fr !important;
+    gap: 13px;
+  }
+
+  #why-choose-section .bento-card p {
+    font-size: 12px;
+    line-height: 1.75;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========================================
+   VIRENDRA CABS - PREMIUM COLORFUL FAQ
+=========================================== */
+
+.twm-faq-section-1 {
+  --faq-navy: #082b4d;
+  --faq-blue: #087bb8;
+  --faq-orange: #f58220;
+
+  margin: 35px 0 !important;
+}
+
+.twm-faq-section-1,
+.twm-faq-section-1 * {
+  box-sizing: border-box;
+}
+
+/* OUTER FAQ SECTION */
+
+.twm-faq-section-1 .twm-faq-info-wrap {
+  position: relative;
+  width: 100%;
+  padding: 35px;
+  border-radius: 22px;
+
+  background: linear-gradient(
+    135deg,
+    #e9f7ff 0%,
+    #ffffff 52%,
+    #fff3e7 100%
+  );
+
+  border: 1px solid #d8eaf5;
+  overflow: hidden;
+}
+
+/* SECTION HEADING */
+
+.twm-faq-section-1 .section-head {
+  margin-bottom: 28px;
+}
+
+.twm-faq-section-1 .twm-large-title {
+  position: relative;
+  margin: 0;
+  padding-bottom: 17px;
+
+  color: #082b4d !important;
+  font-size: clamp(23px, 3vw, 34px);
+  font-weight: 850;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+}
+
+.twm-faq-section-1 .twm-large-title span {
+  color: #f58220;
+}
+
+.twm-faq-section-1 .twm-large-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 85px;
+  height: 5px;
+  border-radius: 20px;
+
+  background: linear-gradient(
+    90deg,
+    #087bb8,
+    #f58220
+  );
+}
+
+/* ACCORDION WRAPPER */
+
+.twm-faq-section-1 .twm-faq-info,
+.twm-faq-section-1 .twm-acdn {
+  width: 100%;
+}
+
+.twm-faq-section-1 .twm-acdn {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* FAQ ITEMS */
+
+.twm-faq-section-1 .accordion-item,
+.twm-faq-section-1 .twm-acdn > .card {
+  position: relative;
+  margin: 0;
+  border: 1px solid #c9e3f3;
+  border-left: 5px solid #087bb8;
+  border-radius: 14px !important;
+  background: #ffffff;
+  overflow: hidden;
+
+  box-shadow: 0 5px 18px rgba(8,43,77,.055);
+  transition:
+    border-color .3s ease,
+    box-shadow .3s ease,
+    transform .3s ease;
+}
+
+/* ALTERNATE ORANGE ACCENTS */
+
+.twm-faq-section-1 .accordion-item:nth-child(even),
+.twm-faq-section-1 .twm-acdn > .card:nth-child(even) {
+  border-left-color: #f58220;
+  border-top-color: #f8d9bc;
+  border-right-color: #f8d9bc;
+  border-bottom-color: #f8d9bc;
+}
+
+.twm-faq-section-1 .accordion-item:hover,
+.twm-faq-section-1 .twm-acdn > .card:hover {
+  box-shadow: 0 10px 24px rgba(8,43,77,.11);
+  transform: translateY(-2px);
+}
+
+/* QUESTION BUTTON */
+
+.twm-faq-section-1 .accordion-button,
+.twm-faq-section-1 .card-header button,
+.twm-faq-section-1 .card-header a {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  min-height: 68px;
+  padding: 19px 55px 19px 22px;
+
+  background: linear-gradient(
+    100deg,
+    #e6f5ff,
+    #ffffff
+  );
+
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+
+  color: #082b4d !important;
+  font-size: 16px;
+  font-weight: 750;
+  line-height: 1.6;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: background .3s ease;
+}
+
+/* ALTERNATE QUESTION COLORS */
+
+.twm-faq-section-1
+.accordion-item:nth-child(even)
+.accordion-button,
+
+.twm-faq-section-1
+.twm-acdn > .card:nth-child(even)
+.card-header button,
+
+.twm-faq-section-1
+.twm-acdn > .card:nth-child(even)
+.card-header a {
+  background: linear-gradient(
+    100deg,
+    #fff0df,
+    #ffffff
+  );
+}
+
+/* REMOVE DEFAULT CARD HEADER BACKGROUND */
+
+.twm-faq-section-1 .card-header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+/* ACTIVE QUESTION - BOOTSTRAP 5 */
+
+.twm-faq-section-1 .accordion-button:not(.collapsed) {
+  background: linear-gradient(
+    110deg,
+    #082b4d,
+    #087bb8
+  ) !important;
+
+  color: #ffffff !important;
+  box-shadow: none;
+}
+
+/* ACTIVE QUESTION - BOOTSTRAP 4 */
+
+.twm-faq-section-1 .card-header button[aria-expanded="true"],
+.twm-faq-section-1 .card-header a[aria-expanded="true"] {
+  background: linear-gradient(
+    110deg,
+    #082b4d,
+    #087bb8
+  ) !important;
+
+  color: #ffffff !important;
+}
+
+/* PLUS / MINUS ICON - BOOTSTRAP 5 */
+
+.twm-faq-section-1 .accordion-button::after {
+  content: "+";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  flex-shrink: 0;
+
+  background: #087bb8;
+  background-image: none !important;
+  border-radius: 9px;
+
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1;
+
+  transition: background .25s ease;
+}
+
+.twm-faq-section-1 .accordion-button:not(.collapsed)::after {
+  content: "−";
+  background: #f58220;
+  transform: translateY(-50%);
+}
+
+/* ANSWER BODY */
+
+.twm-faq-section-1 .accordion-body,
+.twm-faq-section-1 .card-body {
+  padding: 21px 24px;
+  background: #ffffff;
+
+  color: #405b70 !important;
+  font-size: 14px;
+  line-height: 1.9;
+
+  border-top: 1px solid #e5eff6;
+}
+
+/* FIX TEXT VISIBILITY */
+
+.twm-faq-section-1 .accordion-body p,
+.twm-faq-section-1 .card-body p {
+  margin: 0 0 10px;
+  color: #405b70 !important;
+  opacity: 1 !important;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.twm-faq-section-1 .accordion-body p:last-child,
+.twm-faq-section-1 .card-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* LINKS INSIDE ANSWERS */
+
+.twm-faq-section-1 .accordion-body a,
+.twm-faq-section-1 .card-body a {
+  color: #087bb8;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* FOCUS ACCESSIBILITY */
+
+.twm-faq-section-1 .accordion-button:focus-visible,
+.twm-faq-section-1 .card-header button:focus-visible,
+.twm-faq-section-1 .card-header a:focus-visible {
+  outline: 3px solid #f58220;
+  outline-offset: -3px;
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+  .twm-faq-section-1 .twm-faq-info-wrap {
+    padding: 26px;
+  }
+
+  .twm-faq-section-1 .accordion-button,
+  .twm-faq-section-1 .card-header button,
+  .twm-faq-section-1 .card-header a {
+    font-size: 15px;
+    padding: 17px 53px 17px 18px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .twm-faq-section-1 {
+    margin: 25px 0 !important;
+  }
+
+  .twm-faq-section-1 .twm-faq-info-wrap {
+    padding: 19px 13px;
+    border-radius: 15px;
+  }
+
+  .twm-faq-section-1 .twm-large-title {
+    font-size: 23px;
+    padding-bottom: 14px;
+  }
+
+  .twm-faq-section-1 .section-head {
+    margin-bottom: 22px;
+  }
+
+  .twm-faq-section-1 .twm-acdn {
+    gap: 11px;
+  }
+
+  .twm-faq-section-1 .accordion-item,
+  .twm-faq-section-1 .twm-acdn > .card {
+    border-radius: 11px !important;
+    border-left-width: 4px;
+  }
+
+  .twm-faq-section-1 .accordion-button,
+  .twm-faq-section-1 .card-header button,
+  .twm-faq-section-1 .card-header a {
+    min-height: 60px;
+    padding: 14px 47px 14px 13px;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .twm-faq-section-1 .accordion-button::after {
+    right: 11px;
+    width: 27px;
+    height: 27px;
+    border-radius: 7px;
+    font-size: 19px;
+  }
+
+  .twm-faq-section-1 .accordion-body,
+  .twm-faq-section-1 .card-body {
+    padding: 15px;
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .twm-faq-section-1 .accordion-body p,
+  .twm-faq-section-1 .card-body p {
+    font-size: 12px;
+  }
+
+  .twm-faq-section-1 .accordion-item:hover,
+  .twm-faq-section-1 .twm-acdn > .card:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .twm-faq-section-1 .twm-faq-info-wrap {
+    padding: 15px 9px;
+  }
+
+  .twm-faq-section-1 .twm-large-title {
+    font-size: 20px;
+  }
+
+  .twm-faq-section-1 .accordion-button {
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .twm-faq-section-1 .accordion-item,
+  .twm-faq-section-1 .twm-acdn > .card,
+  .twm-faq-section-1 .accordion-button {
+    transition: none;
+  }
+}
+
+
+
+
+
+
+
+
+/* =========================================
+   VIRENDRA CABS - FAQ CARD GAP FIX
+========================================= */
+
+/* Space between FAQ cards */
+.twm-faq-section-1 .twm-acdn .accordion-item,
+.twm-faq-section-1 .twm-acdn .card {
+  margin-bottom: 10px !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+/* Remove extra gap after last card */
+.twm-faq-section-1 .twm-acdn .accordion-item:last-child,
+.twm-faq-section-1 .twm-acdn .card:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Gap for Bootstrap accordion */
+.twm-faq-section-1 .accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px !important;
+}
+
+/* Gap for nested FaqSection accordion */
+.twm-faq-section-1 .twm-acdn .accordion {
+  gap: 16px !important;
+}
+
+/* Improve card separation */
+.twm-faq-section-1 .accordion-item {
+  box-shadow: 0 5px 18px rgba(8, 43, 77, 0.07);
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .twm-faq-section-1 .twm-acdn .accordion-item,
+  .twm-faq-section-1 .twm-acdn .card {
+    margin-bottom: 12px !important;
+  }
+
+  .twm-faq-section-1 .accordion,
+  .twm-faq-section-1 .twm-acdn .accordion {
+    gap: 12px !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================
+   VIRENDRA CABS - FIXED PREMIUM ROUTE LIST
+   ONE CARD PER ROW | SIDEBAR FRIENDLY
+============================================ */
+
+.routeList {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 15px !important;
+  width: 100% !important;
+  min-width: 0;
+  max-width: 100%;
+  margin: 25px 0;
+  padding: 0;
+}
+
+.routeList,
+.routeList * {
+  box-sizing: border-box;
+}
+
+/* ROUTE CARD */
+
+.routeList .routeItem {
+  position: relative;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100%;
+  min-height: 105px;
+
+  gap: 13px;
+  padding: 12px;
+
+  background: linear-gradient(
+    110deg,
+    #e8f6ff,
+    #ffffff
+  );
+
+  border: 1px solid #b8dff4;
+  border-left: 4px solid #087bb8;
+  border-radius: 14px;
+
+  color: #082b4d;
+  text-decoration: none !important;
+
+  box-shadow: 0 5px 17px rgba(8,43,77,.06);
+  overflow: hidden;
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    border-color .3s ease;
+}
+
+/* ORANGE ALTERNATE */
+
+.routeList .routeItem:nth-child(even) {
+  background: linear-gradient(
+    110deg,
+    #fff0df,
+    #ffffff
+  );
+
+  border-color: #f7d6b8;
+  border-left-color: #f58220;
+}
+
+/* IMAGE */
+
+.routeList .routeThumb {
+  position: relative;
+  display: block;
+
+  flex: 0 0 85px !important;
+  width: 85px !important;
+  min-width: 85px;
+  height: 75px;
+
+  border-radius: 10px;
+  overflow: hidden;
+
+  background: #d9effc;
+  border: 2px solid #ffffff;
+
+  box-shadow: 0 3px 10px rgba(8,43,77,.12);
+}
+
+.routeList .routeThumb img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none;
+  object-fit: cover;
+  transition: transform .35s ease;
+}
+
+/* TEXT AREA */
+
+.routeList .routeMeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  flex: 1 1 0% !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: 100%;
+
+  gap: 9px;
+  overflow: hidden;
+}
+
+/* ROUTE NAME - FIX VERTICAL LETTERS */
+
+.routeList .routeTitle {
+  display: block;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0;
+
+  color: #082b4d !important;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.45;
+
+  white-space: normal !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  writing-mode: horizontal-tb !important;
+  text-orientation: mixed !important;
+  hyphens: none;
+}
+
+/* UNDERLINE */
+
+.routeList .routeUnderline {
+  display: block;
+  flex-shrink: 0;
+
+  width: 43px;
+  height: 3px;
+
+  border-radius: 10px;
+  background: #087bb8;
+
+  transition: width .3s ease;
+}
+
+.routeList .routeItem:nth-child(even) .routeUnderline {
+  background: #f58220;
+}
+
+/* ARROW */
+
+.routeList .routeArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 30px !important;
+  width: 30px !important;
+  min-width: 30px;
+  height: 30px;
+
+  margin-left: auto;
+
+  background: linear-gradient(
+    135deg,
+    #087bb8,
+    #082b4d
+  );
+
+  border-radius: 9px;
+  color: #ffffff !important;
+
+  font-size: 24px;
+  line-height: 1;
+
+  transition: transform .3s ease;
+}
+
+.routeList .routeItem:nth-child(even) .routeArrow {
+  background: linear-gradient(
+    135deg,
+    #f99a41,
+    #df6b0b
+  );
+}
+
+/* HOVER */
+
+.routeList .routeItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(8,43,77,.12);
+}
+
+.routeList .routeItem:hover .routeThumb img {
+  transform: scale(1.07);
+}
+
+.routeList .routeItem:hover .routeArrow {
+  transform: translateX(3px);
+}
+
+.routeList .routeItem:hover .routeUnderline {
+  width: 65px;
+}
+
+/* NARROW SIDEBAR */
+
+@container (max-width: 360px) {
+  .routeList .routeItem {
+    gap: 8px;
+    padding: 9px;
+  }
+
+  .routeList .routeThumb {
+    flex-basis: 60px !important;
+    width: 60px !important;
+    min-width: 60px;
+    height: 60px;
+  }
+
+  .routeList .routeTitle {
+    font-size: 12px;
+  }
+
+  .routeList .routeArrow {
+    flex-basis: 25px !important;
+    width: 25px !important;
+    min-width: 25px;
+    height: 25px;
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+  .routeList .routeItem {
+    min-height: 95px;
+    gap: 10px;
+  }
+
+  .routeList .routeThumb {
+    flex-basis: 75px !important;
+    width: 75px !important;
+    min-width: 75px;
+    height: 70px;
+  }
+
+  .routeList .routeTitle {
+    font-size: 14px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 575px) {
+  .routeList {
+    gap: 11px !important;
+    margin: 20px 0;
+  }
+
+  .routeList .routeItem {
+    padding: 10px;
+    min-height: 85px;
+    gap: 10px;
+    border-radius: 11px;
+  }
+
+  .routeList .routeThumb {
+    flex: 0 0 68px !important;
+    width: 68px !important;
+    min-width: 68px;
+    height: 63px;
+  }
+
+  .routeList .routeTitle {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .routeList .routeArrow {
+    flex-basis: 27px !important;
+    width: 27px !important;
+    min-width: 27px;
+    height: 27px;
+    font-size: 21px;
+  }
+
+  .routeList .routeItem:hover {
+    transform: none;
+  }
+}
+
+/* VERY SMALL CONTAINERS */
+
+@media (max-width: 360px) {
+  .routeList .routeThumb {
+    flex-basis: 55px !important;
+    width: 55px !important;
+    min-width: 55px;
+    height: 55px;
+  }
+
+  .routeList .routeTitle {
+    font-size: 12px;
+  }
+
+  .routeList .routeArrow {
+    flex-basis: 24px !important;
+    width: 24px !important;
+    min-width: 24px;
+    height: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .routeList .routeItem,
+  .routeList .routeThumb img,
+  .routeList .routeArrow,
+  .routeList .routeUnderline {
+    transition: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================================
+   VIRENDRA CABS - CONTACT SECTION FIX
+   PHONE TOP | EMAIL MIDDLE | ADDRESS BOTTOM
+   ONE FULL-WIDTH CARD PER ROW
+============================================= */
+
+.pc-contact {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100%;
+  padding: 22px 16px;
+  margin: 25px 0;
+  overflow: hidden;
+}
+
+/* ALWAYS ONE CARD PER ROW */
+
+.pc-contact .pc-grid {
+  display: flex !important;
+  flex-direction: column !important;
+  grid-template-columns: none !important;
+  gap: 16px !important;
+  width: 100%;
+  min-width: 0;
+}
+
+/* EACH CARD FULL WIDTH */
+
+.pc-contact .pc-grid .pc-tile,
+.pc-contact .pc-grid .pc-tile:nth-child(3) {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start;
+
+  grid-column: auto !important;
+  grid-row: auto !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+
+  padding: 22px 20px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* PHONE FIRST */
+
+.pc-contact .pc-grid .pc-tile:nth-child(1) {
+  order: 1;
+  background: linear-gradient(135deg, #082b4d, #075587);
+}
+
+/* EMAIL SECOND */
+
+.pc-contact .pc-grid .pc-tile:nth-child(2) {
+  order: 2;
+  background: linear-gradient(135deg, #e0f4ff, #bfe8ff);
+}
+
+/* ADDRESS THIRD */
+
+.pc-contact .pc-grid .pc-tile:nth-child(3) {
+  order: 3;
+  background: linear-gradient(135deg, #f58220, #c9570a);
+}
+
+/* HEADER */
+
+.pc-contact .pc-tile-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 17px;
+  padding-bottom: 13px;
+}
+
+.pc-contact .pc-tile-head span {
+  flex: 1;
+  min-width: 0;
+  font-size: 17px;
+  line-height: 1.4;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+/* PHONE NUMBER */
+
+.pc-contact .pc-list {
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 18px;
+}
+
+.pc-contact .pc-call {
+  display: block;
+  width: 100%;
+  color: #ffffff !important;
+  font-size: clamp(16px, 2vw, 21px);
+  font-weight: 800;
+  line-height: 1.5;
+
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+
+/* BUTTONS */
+
+.pc-contact .pc-cta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  margin-top: 0;
+}
+
+.pc-contact .pc-whats,
+.pc-contact .pc-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  width: auto;
+  max-width: 100%;
+  min-height: 40px;
+  padding: 10px 14px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+/* EMAIL - NO VERTICAL LETTERS */
+
+.pc-contact .pc-email {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+
+  color: #082b4d !important;
+  font-size: clamp(13px, 1.5vw, 16px);
+  font-weight: 700;
+  line-height: 1.7;
+
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: anywhere !important;
+  writing-mode: horizontal-tb !important;
+}
+
+/* ADDRESS */
+
+.pc-contact .pc-address {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+
+  color: #ffffff !important;
+  font-size: 14px;
+  font-weight: 400;
+  /* line-height: 1.85; */
+
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  writing-mode: horizontal-tb !important;
+}
+
+.pc-contact .pc-address strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff !important;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+/* SIDEBAR-SIZED CONTAINERS */
+
+.pc-contact {
+  container-type: inline-size;
+}
+
+@container (max-width: 340px) {
+  .pc-contact .pc-grid .pc-tile {
+    padding: 16px 13px;
+  }
+
+  .pc-contact .pc-tile-head span {
+    font-size: 15px;
+  }
+
+  .pc-contact .pc-call {
+    font-size: 16px;
+  }
+
+  .pc-contact .pc-email {
+    font-size: 13px;
+  }
+
+  .pc-contact .pc-address {
+    font-size: 12px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 575px) {
+  .pc-contact {
+    padding: 18px 12px;
+    border-radius: 14px;
+  }
+
+  .pc-contact .pc-grid {
+    gap: 13px !important;
+  }
+
+  .pc-contact .pc-grid .pc-tile,
+  .pc-contact .pc-grid .pc-tile:nth-child(3) {
+    padding: 18px 15px;
+    border-radius: 12px;
+  }
+
+  .pc-contact .pc-tile-head span {
+    font-size: 15px;
+  }
+
+  .pc-contact .pc-call {
+    font-size: 18px;
+  }
+
+  .pc-contact .pc-email {
+    font-size: 14px;
+  }
+
+  .pc-contact .pc-address {
+    font-size: 13px;
+  }
+}
+
+
+
+
+/* ===========================================
+   VIRENDRA CABS - PHONE CARD FINAL FIX
+=========================================== */
+
+/* PHONE CARD */
+.pc-contact .pc-grid .pc-tile:first-child {
+  background: linear-gradient(
+    135deg,
+    #082b4d 0%,
+    #075587 100%
+  ) !important;
+
+  padding: 25px !important;
+  border-radius: 18px;
+  color: #ffffff !important;
+}
+
+/* PHONE HEADING */
+.pc-contact .pc-tile:first-child .pc-tile-head {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255,255,255,.25);
+}
+
+.pc-contact .pc-tile:first-child .pc-tile-head span {
+  color: #ffffff !important;
+  font-size: 19px;
+  font-weight: 800;
+  opacity: 1 !important;
+}
+
+/* PHONE ICON */
+.pc-contact .pc-tile:first-child .pc-tile-head i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+
+  background: rgba(255,255,255,.17) !important;
+  border-radius: 12px;
+
+  color: #ffffff !important;
+  font-size: 19px;
+}
+
+/* PHONE NUMBER */
+.pc-contact .pc-tile:first-child .pc-call {
+  display: block;
+  color: #ffffff !important;
+  font-size: 16px;
+  font-weight: 850;
+  line-height: 1.5;
+  text-decoration: none !important;
+  opacity: 1 !important;
+}
+
+/* BUTTON CONTAINER */
+.pc-contact .pc-tile:first-child .pc-cta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* WHATSAPP BUTTON */
+.pc-contact .pc-tile:first-child .pc-whats {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  padding: 12px 19px;
+  min-height: 44px;
+
+  background: #25d366 !important;
+  color: #ffffff !important;
+
+  border: 0;
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 750;
+  text-decoration: none !important;
+
+  box-shadow: 0 5px 14px rgba(0,0,0,.15);
+}
+
+/* WHATSAPP ICON */
+.pc-contact .pc-tile:first-child .pc-whats i {
+  color: #ffffff !important;
+  font-size: 18px;
+}
+
+/* CALL NOW BUTTON */
+.pc-contact .pc-tile:first-child .pc-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 19px;
+  min-height: 44px;
+
+  background: #f58220 !important;
+  color: #ffffff !important;
+
+  border: 0;
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 750;
+  text-decoration: none !important;
+
+  box-shadow: 0 5px 14px rgba(0,0,0,.15);
+}
+
+/* BUTTON HOVER */
+.pc-contact .pc-tile:first-child .pc-whats:hover {
+  background: #1baa50 !important;
+  color: #ffffff !important;
+}
+
+.pc-contact .pc-tile:first-child .pc-primary:hover {
+  background: #e36d0b !important;
+  color: #ffffff !important;
+}
+
+/* MOBILE */
+@media (max-width: 575px) {
+  .pc-contact .pc-grid .pc-tile:first-child {
+    padding: 20px 17px !important;
+  }
+
+  .pc-contact .pc-tile:first-child .pc-tile-head span {
+    font-size: 17px;
+  }
+
+  .pc-contact .pc-tile:first-child .pc-call {
+    font-size: 20px;
+  }
+
+  .pc-contact .pc-tile:first-child .pc-whats,
+  .pc-contact .pc-tile:first-child .pc-primary {
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================
+   VIRENDRA CABS - EMAIL & ADDRESS FINAL FIX
+   Matching Phone Card UI
+============================================ */
+
+/* EMAIL + ADDRESS COMMON STYLING */
+
+.pc-contact .pc-tile:nth-child(2),
+.pc-contact .pc-tile:nth-child(3) {
+  padding: 25px !important;
+  border-radius: 18px !important;
+  min-height: 0 !important;
+  height: auto !important;
+}
+
+/* CARD HEADER */
+
+.pc-contact .pc-tile:nth-child(2) .pc-tile-head,
+.pc-contact .pc-tile:nth-child(3) .pc-tile-head {
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px;
+
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 23px;
+  padding-bottom: 17px;
+
+  border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+/* EMAIL HEADER DIVIDER */
+
+.pc-contact .pc-tile:nth-child(2) .pc-tile-head {
+  border-bottom-color: rgba(8,43,77,.18);
+}
+
+/* EMAIL + ADDRESS ICONS */
+
+.pc-contact .pc-tile:nth-child(2) .pc-tile-head i,
+.pc-contact .pc-tile:nth-child(3) .pc-tile-head i {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 52px !important;
+  width: 52px !important;
+  height: 52px !important;
+
+  margin: 0;
+  padding: 0;
+
+  border-radius: 13px;
+  font-size: 21px !important;
+  line-height: 1 !important;
+
+  transition: transform .3s ease;
+}
+
+/* EMAIL ICON */
+
+.pc-contact .pc-tile:nth-child(2) .pc-tile-head i {
+  background: #ffffff !important;
+  color: #087bb8 !important;
+  box-shadow: 0 5px 15px rgba(8,123,184,.12);
+}
+
+/* ADDRESS ICON */
+
+.pc-contact .pc-tile:nth-child(3) .pc-tile-head i {
+  background: rgba(255,255,255,.2) !important;
+  color: #ffffff !important;
+}
+
+/* EMAIL + ADDRESS HEADINGS */
+
+.pc-contact .pc-tile:nth-child(2) .pc-tile-head span,
+.pc-contact .pc-tile:nth-child(3) .pc-tile-head span {
+  display: block;
+  flex: 1;
+  min-width: 0;
+
+  font-size: 19px !important;
+  font-weight: 800 !important;
+  line-height: 1.4;
+
+  opacity: 1 !important;
+  white-space: normal;
+  word-break: normal;
+}
+
+/* EMAIL HEADING */
+
+.pc-contact .pc-tile:nth-child(2) .pc-tile-head span {
+  color: #082b4d !important;
+}
+
+/* ADDRESS HEADING */
+
+.pc-contact .pc-tile:nth-child(3) .pc-tile-head span {
+  color: #ffffff !important;
+}
+
+/* EMAIL TEXT */
+
+.pc-contact .pc-tile:nth-child(2) .pc-email {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+
+  color: #082b4d !important;
+  font-size: 17px;
+  font-weight: 750;
+  line-height: 1.7;
+  text-decoration: none !important;
+
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* ADDRESS TEXT */
+
+.pc-contact .pc-tile:nth-child(3) .pc-address {
+  display: block;
+  margin: 0;
+
+  color: #ffffff !important;
+  font-size: 14px;
+  line-height: 1.85;
+  font-weight: 450;
+  font-style: normal;
+  opacity: 1 !important;
+}
+
+/* COMPANY NAME */
+
+.pc-contact .pc-tile:nth-child(3) .pc-address strong {
+  display: block;
+  margin-bottom: 10px;
+
+  color: #ffffff !important;
+  font-size: 18px;
+  font-weight: 850;
+}
+
+/* HOVER ICON ANIMATION */
+
+.pc-contact .pc-tile:nth-child(2):hover .pc-tile-head i,
+.pc-contact .pc-tile:nth-child(3):hover .pc-tile-head i {
+  transform: scale(1.07);
+}
+
+/* MOBILE */
+
+@media (max-width: 575px) {
+  .pc-contact .pc-tile:nth-child(2),
+  .pc-contact .pc-tile:nth-child(3) {
+    padding: 20px 17px !important;
+  }
+
+  .pc-contact .pc-tile:nth-child(2) .pc-tile-head i,
+  .pc-contact .pc-tile:nth-child(3) .pc-tile-head i {
+    width: 43px !important;
+    height: 43px !important;
+    flex-basis: 43px !important;
+    font-size: 18px !important;
+  }
+
+  .pc-contact .pc-tile:nth-child(2) .pc-tile-head span,
+  .pc-contact .pc-tile:nth-child(3) .pc-tile-head span {
+    font-size: 17px !important;
+  }
+
+  .pc-contact .pc-tile:nth-child(2) .pc-email {
+    font-size: 14px;
+  }
+
+  .pc-contact .pc-tile:nth-child(3) .pc-address {
+    font-size: 13px;
+  }
+
+  .pc-contact .pc-tile:nth-child(3) .pc-address strong {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+
+.testimonial-area{
+  background-color: #e8dfd3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

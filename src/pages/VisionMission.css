@@ -1,0 +1,480 @@
+
+/* ==============================================
+   VIRENDRA CABS - VISION & MISSION
+   PREMIUM RESPONSIVE DESIGN
+============================================== */
+
+.vm-section {
+  --vm-navy: #082b4d;
+  --vm-blue: #087bb8;
+  --vm-orange: #f58220;
+
+  padding: 75px 0;
+  background:
+    radial-gradient(
+      circle at 5% 10%,
+      rgba(8,123,184,.08),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 95% 90%,
+      rgba(245,130,32,.09),
+      transparent 35%
+    ),
+    #f8fbff;
+}
+
+.vm-section,
+.vm-section * {
+  box-sizing: border-box;
+}
+
+/* HEADING */
+
+.vm-heading {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 42px;
+}
+
+.vm-label {
+  display: inline-block;
+  margin-bottom: 13px;
+  padding: 8px 17px;
+  border-radius: 30px;
+  background: #e2f3ff;
+  color: var(--vm-blue);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.vm-heading h2 {
+  margin: 0 0 16px;
+  color: var(--vm-navy);
+  font-size: clamp(27px, 3.5vw, 42px);
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.vm-heading h2 span {
+  color: var(--vm-orange);
+}
+
+.vm-heading p {
+  margin: 0;
+  color: #526b80;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* TWO EQUAL CARDS */
+
+.vm-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* COMMON CARD */
+
+.vm-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+  padding: 35px;
+  border-radius: 22px;
+  overflow: hidden;
+  isolation: isolate;
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+/* VISION - NAVY BLUE */
+
+.vm-vision {
+  background: linear-gradient(
+    135deg,
+    #082b4d,
+    #075587
+  );
+  color: #ffffff;
+  box-shadow: 0 12px 32px rgba(8,43,77,.16);
+}
+
+/* MISSION - ORANGE */
+
+.vm-mission {
+  background: linear-gradient(
+    135deg,
+    #f58220,
+    #d45e0b
+  );
+  color: #ffffff;
+  box-shadow: 0 12px 32px rgba(245,130,32,.15);
+}
+
+/* DECORATIVE SHAPES */
+
+.vm-card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 260px;
+  height: 260px;
+  top: -110px;
+  right: -110px;
+  border: 45px solid rgba(255,255,255,.09);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.vm-card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 180px;
+  height: 180px;
+  bottom: -115px;
+  left: -75px;
+  background: rgba(255,255,255,.055);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* CARD TOP */
+
+.vm-card-top {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin-bottom: 27px;
+}
+
+/* ICON */
+
+.vm-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.17);
+  border: 1px solid rgba(255,255,255,.25);
+}
+
+.vm-icon i {
+  color: #ffffff !important;
+  font-size: 28px;
+}
+
+/* LABEL */
+
+.vm-card-label {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: 2px;
+}
+
+/* CARD TITLE */
+
+.vm-card h3 {
+  margin: 0 0 20px;
+  color: #ffffff !important;
+  font-size: clamp(21px, 2vw, 27px);
+  font-weight: 850;
+  line-height: 1.4;
+}
+
+/* CARD DESCRIPTION */
+
+.vm-card p {
+  margin: 0 0 17px;
+  color: rgba(255,255,255,.94) !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.95;
+  opacity: 1 !important;
+}
+
+/* FOOTER */
+
+.vm-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,.25);
+}
+
+.vm-card-footer i {
+  color: #ffffff;
+  font-size: 19px;
+}
+
+.vm-card-footer span {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+/* HOVER */
+
+.vm-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 42px rgba(8,43,77,.20);
+}
+
+/* COMMITMENT BANNER */
+
+.vm-commitment {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-top: 28px;
+  padding: 25px 30px;
+  border-radius: 18px;
+  background: linear-gradient(
+    110deg,
+    #e0f4ff,
+    #ffffff,
+    #fff0df
+  );
+  border: 1px solid #c8e4f5;
+  box-shadow: 0 7px 22px rgba(8,43,77,.06);
+}
+
+/* COMMITMENT ICON */
+
+.vm-commitment-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 66px;
+  width: 66px;
+  height: 66px;
+  border-radius: 17px;
+  background: linear-gradient(
+    135deg,
+    #087bb8,
+    #082b4d
+  );
+  color: #ffffff;
+  font-size: 27px;
+}
+
+/* COMMITMENT CONTENT */
+
+.vm-commitment-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.vm-commitment-content h4 {
+  margin: 0 0 8px;
+  color: #082b4d;
+  font-size: 20px;
+  font-weight: 850;
+}
+
+.vm-commitment-content p {
+  margin: 0;
+  color: #526b80;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* CTA BUTTON */
+
+.vm-commitment-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  flex-shrink: 0;
+
+  padding: 14px 21px;
+  border-radius: 11px;
+  background: #f58220;
+  color: #ffffff !important;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none !important;
+  white-space: nowrap;
+
+  transition:
+    background .3s ease,
+    transform .3s ease;
+}
+
+.vm-commitment-btn i {
+  color: #ffffff;
+}
+
+.vm-commitment-btn:hover {
+  background: #d96b10;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+  .vm-section {
+    padding: 55px 0;
+  }
+
+  .vm-grid {
+    gap: 16px;
+  }
+
+  .vm-card {
+    padding: 26px;
+  }
+
+  .vm-card h3 {
+    font-size: 21px;
+  }
+
+  .vm-card p {
+    font-size: 13px;
+  }
+
+  .vm-commitment {
+    flex-wrap: wrap;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .vm-section {
+    padding: 40px 0;
+  }
+
+  .vm-heading {
+    margin-bottom: 28px;
+  }
+
+  .vm-heading h2 {
+    font-size: 28px;
+  }
+
+  .vm-heading p {
+    font-size: 13px;
+  }
+
+  .vm-grid {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .vm-card {
+    padding: 25px 21px;
+    border-radius: 17px;
+  }
+
+  .vm-card-top {
+    gap: 13px;
+    margin-bottom: 20px;
+  }
+
+  .vm-icon {
+    width: 52px;
+    height: 52px;
+    flex-basis: 52px;
+    border-radius: 14px;
+  }
+
+  .vm-icon i {
+    font-size: 23px;
+  }
+
+  .vm-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .vm-card p {
+    font-size: 12.5px;
+    line-height: 1.85;
+  }
+
+  .vm-card-footer span {
+    font-size: 12px;
+  }
+
+  .vm-card:hover {
+    transform: none;
+  }
+
+  .vm-commitment {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 17px;
+    padding: 22px;
+    border-radius: 15px;
+  }
+
+  .vm-commitment-icon {
+    width: 53px;
+    height: 53px;
+    flex-basis: 53px;
+    font-size: 22px;
+  }
+
+  .vm-commitment-content h4 {
+    font-size: 18px;
+  }
+
+  .vm-commitment-content p {
+    font-size: 12px;
+  }
+
+  .vm-commitment-btn {
+    width: 100%;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+  .vm-card {
+    padding: 20px 17px;
+  }
+
+  .vm-card h3 {
+    font-size: 18px;
+  }
+
+  .vm-card-label {
+    font-size: 11px;
+  }
+
+  .vm-card-footer span {
+    font-size: 11px;
+  }
+}
+
+/* ACCESSIBILITY */
+
+.vm-commitment-btn:focus-visible {
+  outline: 3px solid #087bb8;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vm-card,
+  .vm-commitment-btn {
+    transition: none;
+  }
+}
