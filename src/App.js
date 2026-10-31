@@ -134,6 +134,16 @@ import Cabserviceinravetpune from './pages/Cab Service in Ravet Pune';
 import Cabbookinginpune from './pages/Cab Booking in Pune';
 import Weddingcarrentaloune from './pages/Wedding Car Rental Pune';
 import ContactButtons from './components/ContactButtons';
+import Govermentcarrentalservice from './pages/Government Car Rental Service in Pune';
+import Vehiclwhiringtendersinpune from './pages/Vehicle Hiring Tenders in Pune';
+import Vipcabserviceinpune from './pages/VIP Cab Service in Pune';
+import Corporatecarrentalservice from './pages/Corporate Car Rental Services in Pune';
+import Vipcabserviceinpuneairport from './pages/VIP Cab Service in Pune Airport';
+import Ministeerfleetscabservice from './pages/Minister Fleet Cab Service in Pune';
+import Cabserviceforofficepickup from './pages/Cab Service for Office Pickup and Drop';
+import Govermentofficecabservice from './pages/Government Office Cab Service in Pune';
+import Pmcemployeetransporttaion from './pages/PMC Employee Transportation Services in Pune';
+import Employeetransportation from './pages/Employee Transportation Services in Pune';
 
 function App() {
   return (
@@ -282,6 +292,18 @@ function App() {
 <Route path="/cab-service-in-ravet-pune" element={<Cabserviceinravetpune />} />
 <Route path="/cab-booking-in-pune" element={<Cabbookinginpune />} />
 <Route path="/wedding-car-rental-pune" element={<Weddingcarrentaloune />} />
+
+
+<Route path="/government-car-rental-service-in-pune" element={<Govermentcarrentalservice />} />
+<Route path="/vehicle-hiring-tenders-in-pune" element={<Vehiclwhiringtendersinpune />} />
+<Route path="/vip-cab-service-in-pune" element={<Vipcabserviceinpune />} />
+<Route path="/corporate-car-rental-services-in-pune" element={<Corporatecarrentalservice />} />
+<Route path="/vip-cab-service-in-pune-airport" element={<Vipcabserviceinpuneairport />} />
+<Route path="/minister-fleet-cab-service-in-pune" element={<Ministeerfleetscabservice />} />
+<Route path="/cab-service-for-office-pickup-and-drop" element={<Cabserviceforofficepickup />} />
+<Route path="/government-office-cab-service-in-pune" element={<Govermentofficecabservice />} />
+<Route path="/pmc-employee-transportation-services-in-pune" element={<Pmcemployeetransporttaion />} />
+<Route path="/employee-transportation-services-in-pune" element={<Employeetransportation />} />
       </Routes>
 
 

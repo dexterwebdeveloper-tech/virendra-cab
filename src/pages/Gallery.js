@@ -16,6 +16,18 @@ const galleryImages = [
   image: "/images/gallery/3.jpeg",
 },
 {
+  id: 1,
+  image: "/images/keyword/131.jpeg",
+},
+{
+  id: 1,
+  image: "/images/keyword/132.jpeg",
+},
+{
+  id: 1,
+  image: "/images/keyword/135.jpeg",
+},
+{
   id: 13,
   image: "/images/gallery/13.jpeg",
 },
