@@ -523,7 +523,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      href="https://youtu.be/6AWZG1Og498"
+                      href="https://youtu.be/By0CVWyfccs?si=fElpxYI8XDyorqA8"
                       target="_blank"
                       rel="noreferrer"
                       aria-label="YouTube"
